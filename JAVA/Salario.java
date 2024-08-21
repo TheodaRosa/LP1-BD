@@ -2,16 +2,16 @@
 // Calcular e escrever o valor do novo salário.
 
 public class Salario {
-    private double salmen;
+    private double salMen;
     private double reajuste;
 
     public Salario(double salmen, double reajuste) {
-        this.salmen = salmen;
+        this.salMen = salmen;
         this.reajuste = reajuste;
     }
 
     public double reajuste() {
-        return ((salmen * (reajuste/100))+salmen);
+        return ((salMen * (reajuste/100))+salMen);
     }
 
 
