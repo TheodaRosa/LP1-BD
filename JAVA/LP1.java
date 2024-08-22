@@ -32,7 +32,7 @@ public class LP1 {
     }
 
     public static void main(String[] args) {
-        LP1 lp1 = new LP1(10, 10, 10, 10, 10, 10);
-        System.out.println(lp1.min()+lp1.max()/lp1.max2()* lp1.aPI()+lp1.xis()+lp1.subb());
+        LP1 lp1 = new LP1(8, 8, 8, 8, 10, 10);
+        System.out.println(lp1.min()+((lp1.max()/lp1.max2())* lp1.aPI())+lp1.xis()+lp1.subb());
     }
 }
