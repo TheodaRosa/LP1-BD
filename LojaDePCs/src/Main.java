@@ -11,6 +11,7 @@ public class Main {
             switch (escolha) {
                 case 1:
                     System.out.println("A");
+                    Gabinete.gabinetesEscolhas();
                     break;
                 case 2:
                     System.out.println("B");
