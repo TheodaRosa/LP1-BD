@@ -8,7 +8,7 @@ public class Main {
         int escolha;
         float total = 0;
         do {
-            System.out.print("BEM VINDO À LOJA DE PCS \naa");
+            System.out.print("BEM VINDO À LOJA DE PCS \n 1. GABINETES \n 2. MOUSES \n 3. TECLADOS \n 4. MONITORES");
             escolha = teclado.nextInt();
             switch (escolha) {
                 case 1:
@@ -20,10 +20,12 @@ public class Main {
                     total += Mouse.getPreco();
                     break;
                 case 3:
-                    System.out.println("C");
+                    Teclado.tecladoEscolhas();
+                    total += Teclado.getPreco();
                     break;
                 case 4:
-                    System.out.println("D");
+                    Monitor.monitorEscolhas();
+                    total += Monitor.getPreco();
                     break;
                 case 5:
                     System.out.println("E");
