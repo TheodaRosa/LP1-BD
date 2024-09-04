@@ -3,13 +3,14 @@ import java.util.Scanner;
 public class Gabinete {
     private String modelo;
     private String cor;
-    private float preco;
+    private static float preco;
 
     public void getGabinete(String modelo, String cor, float preco) {
+        Gabinete.preco = preco;
         System.out.printf("Modelo: %s \n Cor: %s \n Preço: %.2f \n \n ", modelo, cor, preco);
     }
 
-    private float getPreco (){
+    public static float getPreco(){
         return preco;
     }
 

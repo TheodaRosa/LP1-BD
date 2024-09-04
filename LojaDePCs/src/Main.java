@@ -6,15 +6,18 @@ public class Main {
 
         // if (escolha > 0) {System.out.print(escolha);} else {System.out.print("-");}
         int escolha;
+        float total = 0;
         do {
+            System.out.print("BEM VINDO À LOJA DE PCS \naa");
             escolha = teclado.nextInt();
             switch (escolha) {
                 case 1:
-                    System.out.println("A");
                     Gabinete.gabinetesEscolhas();
+                    total += Gabinete.getPreco();
                     break;
                 case 2:
-                    System.out.println("B");
+                    Mouse.mousesEscolhas();
+                    total += Mouse.getPreco();
                     break;
                 case 3:
                     System.out.println("C");
