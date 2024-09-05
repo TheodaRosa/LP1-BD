@@ -1,21 +1,21 @@
 import java.util.Scanner;
 
-public class Mouse {
+public class RAM {
     private String modelo;
-    private int dpi;
-    private static float preco;
+    private int GB;
+    static float preco;
 
-    public void opcoesMouse(String modelo, int dpi, float preco) {
-        Mouse.preco = preco;
-        System.out.printf("Modelo: %s \nDPI: %d \nPreço: %.2f \n \n ", modelo, dpi, preco);
+    public void opcoesRAM(String modelo, int GB, float preco) {
+        RAM.preco = preco;
+        System.out.printf("Modelo: %s \nMemória: %d \nPreço: %.2f \n \n ", modelo, GB, preco);
     }
 
     public static float getPreco (){
         return preco;
     }
 
-    static void mousesEscolhas() {
-        Mouse mouse = new Mouse();
+    static void ramEscolhas() {
+        RAM ram = new RAM();
         Scanner entrada = new Scanner(System.in);
         int escolha;
         int i = 1;
@@ -24,22 +24,21 @@ public class Mouse {
             switch (i) {
                 case 1:
                     System.out.println("1. ");
-                    mouse.opcoesMouse("Redragon", 800, 200);
+                    ram.opcoesRAM("Samsung", 4, 50);
                     break;
                 case 2:
                     System.out.println("2. ");
-                    mouse.opcoesMouse("Logitech", 1600, 400);
+                    ram.opcoesRAM("XPG", 8, 150);
                     break;
                 case 3:
                     System.out.println("3. ");
-                    mouse.opcoesMouse("Razer", 2400, 600);
+                    ram.opcoesRAM("Corsair", 16, 300);
                     break;
                 case 4:
                     System.out.println("0. Sair");
                     break;
                 default:
                     System.out.println("Opção invalida");
-
             }
             i++;
         }while (i != 5);
@@ -48,13 +47,13 @@ public class Mouse {
             escolha = entrada.nextInt();
             switch (escolha) {
                 case 1:
-                    mouse.opcoesMouse("Redragon", 800, 200);
+                    ram.opcoesRAM("Samsung", 4, 50);
                     break;
                 case 2:
-                    mouse.opcoesMouse("Logitech", 1600, 400);
+                    ram.opcoesRAM("XPG", 8, 150);
                     break;
                 case 3:
-                    mouse.opcoesMouse("Razer", 2400, 600);
+                    ram.opcoesRAM("Corsair", 16, 300);
                     break;
                 case 0:
                     break;

@@ -1,38 +1,38 @@
 import java.util.Scanner;
 
-public class Mouse {
+public class Cooler {
     private String modelo;
-    private int dpi;
-    private static float preco;
+    private String waterAir;
+    static float preco;
 
-    public void opcoesMouse(String modelo, int dpi, float preco) {
-        Mouse.preco = preco;
-        System.out.printf("Modelo: %s \nDPI: %d \nPreço: %.2f \n \n ", modelo, dpi, preco);
+    public void opcoesCooler(String modelo, String waterAir, float preco) {
+        Cooler.preco = preco;
+        System.out.printf("Modelo: %s \nAir/Water: %s \nPreço: %.2f \n \n ", modelo, waterAir, preco);
     }
 
     public static float getPreco (){
         return preco;
     }
 
-    static void mousesEscolhas() {
-        Mouse mouse = new Mouse();
+    static void CoolerEscolhas() {
+        Cooler cooler = new Cooler();
         Scanner entrada = new Scanner(System.in);
         int escolha;
-        int i = 1;
 
+        int i = 1;
         do {
             switch (i) {
                 case 1:
                     System.out.println("1. ");
-                    mouse.opcoesMouse("Redragon", 800, 200);
+                    cooler.opcoesCooler("Rise", "Air 120mm", 50);
                     break;
                 case 2:
                     System.out.println("2. ");
-                    mouse.opcoesMouse("Logitech", 1600, 400);
+                    cooler.opcoesCooler("Rise", "Air 240mm", 100);
                     break;
                 case 3:
                     System.out.println("3. ");
-                    mouse.opcoesMouse("Razer", 2400, 600);
+                    cooler.opcoesCooler("Corsair", "Water", 400);
                     break;
                 case 4:
                     System.out.println("0. Sair");
@@ -42,19 +42,19 @@ public class Mouse {
 
             }
             i++;
-        }while (i != 5);
+        } while (i != 5);
 
         do {
             escolha = entrada.nextInt();
             switch (escolha) {
                 case 1:
-                    mouse.opcoesMouse("Redragon", 800, 200);
+                    cooler.opcoesCooler("Rise", "Air 120mm", 50);
                     break;
                 case 2:
-                    mouse.opcoesMouse("Logitech", 1600, 400);
+                    cooler.opcoesCooler("Rise", "Air 240mm", 100);
                     break;
                 case 3:
-                    mouse.opcoesMouse("Razer", 2400, 600);
+                    cooler.opcoesCooler("Corsair", "Water", 400);
                     break;
                 case 0:
                     break;
@@ -62,6 +62,6 @@ public class Mouse {
                     System.out.println("Opção invalida");
             }
             System.out.println("Digite 1-3 para continuar sua compra, ou 0 para sair.");
-        }while (escolha != 0);
+        } while (escolha != 0);
     }
 }

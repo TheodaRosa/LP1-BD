@@ -1,21 +1,21 @@
 import java.util.Scanner;
 
-public class Mouse {
+public class Fonte {
     private String modelo;
-    private int dpi;
-    private static float preco;
+    private int Watts;
+    static float preco;
 
-    public void opcoesMouse(String modelo, int dpi, float preco) {
-        Mouse.preco = preco;
-        System.out.printf("Modelo: %s \nDPI: %d \nPreço: %.2f \n \n ", modelo, dpi, preco);
+    public void opcoesFonte(String modelo, int Watts, float preco) {
+        Fonte.preco = preco;
+        System.out.printf("Modelo: %s \nWatts: %d \nPreço: %.2f \n \n ", modelo, Watts, preco);
     }
 
     public static float getPreco (){
         return preco;
     }
 
-    static void mousesEscolhas() {
-        Mouse mouse = new Mouse();
+    static void fonteEscolhas() {
+        Fonte fonte = new Fonte();
         Scanner entrada = new Scanner(System.in);
         int escolha;
         int i = 1;
@@ -24,22 +24,21 @@ public class Mouse {
             switch (i) {
                 case 1:
                     System.out.println("1. ");
-                    mouse.opcoesMouse("Redragon", 800, 200);
+                    fonte.opcoesFonte("Duex", 230, 200);
                     break;
                 case 2:
                     System.out.println("2. ");
-                    mouse.opcoesMouse("Logitech", 1600, 400);
+                    fonte.opcoesFonte("Gigabyte", 500, 250);
                     break;
                 case 3:
                     System.out.println("3. ");
-                    mouse.opcoesMouse("Razer", 2400, 600);
+                    fonte.opcoesFonte("Corsair", 550, 800);
                     break;
                 case 4:
                     System.out.println("0. Sair");
                     break;
                 default:
                     System.out.println("Opção invalida");
-
             }
             i++;
         }while (i != 5);
@@ -48,13 +47,13 @@ public class Mouse {
             escolha = entrada.nextInt();
             switch (escolha) {
                 case 1:
-                    mouse.opcoesMouse("Redragon", 800, 200);
+                    fonte.opcoesFonte("Duex", 230, 200);
                     break;
                 case 2:
-                    mouse.opcoesMouse("Logitech", 1600, 400);
+                    fonte.opcoesFonte("Gigabyte", 500, 250);
                     break;
                 case 3:
-                    mouse.opcoesMouse("Razer", 2400, 600);
+                    fonte.opcoesFonte("Corsair", 550, 800);
                     break;
                 case 0:
                     break;
