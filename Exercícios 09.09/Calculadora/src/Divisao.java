@@ -18,7 +18,13 @@ public class Divisao {
         int numerador = sc.nextInt();
         System.out.println("Digite o divisor: ");
         int divisor = sc.nextInt();
-        Divisao d = new Divisao(divisor, numerador);
-        System.out.printf((char)4+"%d"+"= \n%d"+d.dividendo(), numerador, divisor);
+            if (divisor != 0) {
+                Divisao d = new Divisao(divisor, numerador);
+                System.out.printf("%d/%d = "+d.dividendo(),numerador,divisor);
+            }
+            else{
+                System.out.println("0 não pode ser o Divisor");
+            }
+        System.out.println("Digite 1-4 para escolher outra operação, digite 0 para sair: ");
     }
 }
