@@ -1,38 +1,22 @@
-import java.util.Scanner;
-
 public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int escolha;
-        System.out.println("""
-                           CALCULADORA\s
-                           "1. SOMA\s
-                           "2. SUBTRAÇÃO\s
-                           "3. MULTIPLICAÇÃO\s
-                           "4. DIVISÃO\s
-                           "0. SAIR
-                           """);
-        do{
-            escolha = sc.nextInt();
-            switch (escolha) {
-                case 1:
-                    Soma.Soma();
-                    break;
-                case 2:
-                    Subtracao.Subtracao();
-                    break;
-                case 3:
-                    Multiplicacao.Multiplicar();
-                    break;
-                case 4:
-                    Divisao.Divisao();
-                    break;
-                case 0:
-                    break;
-                default:
-                    System.out.println("Opção inválida. Digite novamente.");
-                    break;
-            }
-        }while (escolha != 0);
+    private int numerador1, numerador2, denominador1, denominador2;
+
+    public Main(int numerador1, int numerador2, int denominador1, int denominador2) {
+        this.numerador1 = numerador1;
+        this.numerador2 = numerador2;
+        this.denominador1 = denominador1;
+        this.denominador2 = denominador2;
     }
+
+    public double Fracao1() {
+        return (double) numerador1 / denominador1;
+    }
+    public double Fracao2() {
+        return (double) numerador2 / denominador2;
+    }
+
+    public static void main(String[] args) {
+
+    }
+
 }
