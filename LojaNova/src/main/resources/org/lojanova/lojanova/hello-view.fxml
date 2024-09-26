@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <tabs>
+    <Tab text="Gabinetes" />
+      <Tab text="PlacasMae">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="45.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                  <Button layoutX="428.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                  <Button layoutX="233.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                  <Label layoutX="46.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                  <Label layoutX="234.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                  <Label layoutX="429.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Fontes">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="45.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="428.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="233.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Label layoutX="46.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="234.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="429.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Processadores">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="45.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="428.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="233.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Label layoutX="46.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="234.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="429.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="PlacasVideo">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="45.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="428.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="233.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Label layoutX="46.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="234.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="429.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="RAM">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="372.0" prefWidth="600.0">
+                     <children>
+                        <Button layoutX="45.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="428.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="233.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Label layoutX="46.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="234.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="429.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="SSD">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="45.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="428.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="233.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Label layoutX="46.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="234.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="429.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="HD">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="45.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="428.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="233.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Label layoutX="46.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="234.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="429.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Coolers">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="45.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="428.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="233.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Label layoutX="46.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="234.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="429.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Monitors">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="45.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="428.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="233.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Label layoutX="46.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="234.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="429.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Teclados">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="45.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="428.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="233.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Label layoutX="46.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="234.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="429.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Mouses">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="45.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="428.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Button layoutX="233.0" layoutY="234.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="109.0" text="Comprar" />
+                        <Label layoutX="46.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="234.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                        <Label layoutX="429.0" layoutY="75.0" prefHeight="131.0" prefWidth="108.0" text="Label" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+    <Tab text="LojaPrincipal" />
+  </tabs>
+</TabPane>
