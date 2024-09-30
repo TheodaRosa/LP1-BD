@@ -10,9 +10,9 @@ import java.io.IOException;
 public class LojaNova extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(LojaNova.class.getResource("loja-nova.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(LojaNova.class.getResource("/org/lojanova/lojanova/loja-nova.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 640, 480);
-        stage.setTitle("Hello!");
+        stage.setTitle("Loja de Computadores!");
         stage.setScene(scene);
         stage.show();
     }
