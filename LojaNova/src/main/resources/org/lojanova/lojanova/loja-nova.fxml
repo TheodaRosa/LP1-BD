@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
@@ -8,18 +9,82 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Button?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.lojanova.lojanova.LojaNovaController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.lojanova.lojanova.LojaNovaController">
    <children>
-      <Button layoutX="243.0" layoutY="284.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="114.0" text="Button" />
-      <Button fx:id="btnMonitor" layoutX="92.0" layoutY="46.0" mnemonicParsing="false" onAction="#btnMonitorOpen" prefHeight="36.0" prefWidth="89.0" text="Button" />
-      <Button layoutX="92.0" layoutY="157.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="89.0" text="Button" />
-      <Button layoutX="92.0" layoutY="100.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="89.0" text="Button" />
-      <Button layoutX="419.0" layoutY="97.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="89.0" text="Button" />
-      <Button layoutX="419.0" layoutY="154.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="89.0" text="Button" />
-      <Button layoutX="419.0" layoutY="43.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="89.0" text="Button" />
-      <Button layoutX="256.0" layoutY="98.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="89.0" text="Button" />
-      <Button layoutX="256.0" layoutY="155.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="89.0" text="Button" />
-      <Button layoutX="256.0" layoutY="44.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="89.0" text="Button" />
+      <ImageView fitHeight="76.0" fitWidth="136.0" layoutX="395.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/baixar%20(8).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="136.0" layoutX="233.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/baixar%20(7).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="135.0" layoutX="68.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/baixar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="136.0" layoutX="396.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/baixar%20(5).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="136.0" layoutX="232.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/baixar%20(4).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="136.0" layoutX="234.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/baixar%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="136.0" layoutX="70.0" layoutY="103.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../Images/baixar%20(11).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="136.0" layoutX="396.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/baixar%20(9).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="136.0" layoutX="234.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/baixar%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="136.0" layoutX="397.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/baixar%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="58.0" fitWidth="192.0" layoutX="37.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Images/baixar%20(6).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="141.0" layoutX="69.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@../../../../../Images/baixar%20(10).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnFinalizar" layoutX="243.0" layoutY="348.0" mnemonicParsing="false" onAction="#btnFinalizarCompras" prefHeight="75.0" prefWidth="114.0" text="Finalizar compras!" />
+      <Button fx:id="btnMonitor" layoutX="92.0" layoutY="46.0" mnemonicParsing="false" onAction="#btnMonitorOpen" prefHeight="36.0" prefWidth="89.0" text="Monitores" />
+      <Button fx:id="btnPlacaMae" layoutX="92.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnPlacaMaeOpen" prefHeight="36.0" prefWidth="89.0" text="Placas Mãe" />
+      <Button fx:id="btnGabinete" layoutX="93.0" layoutY="123.0" mnemonicParsing="false" onAction="#btnGabineteOpen" prefHeight="36.0" prefWidth="89.0" text="Gabinetes" />
+      <Button fx:id="btnCooler" layoutX="420.0" layoutY="123.0" mnemonicParsing="false" onAction="#btnCoolerOpen" prefHeight="36.0" prefWidth="89.0" text="Coolers" />
+      <Button fx:id="btnFonte" layoutX="419.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnFonteOpen" prefHeight="36.0" prefWidth="89.0" text="Fontes" />
+      <Button fx:id="btnRAM" layoutX="419.0" layoutY="43.0" mnemonicParsing="false" onAction="#btnRAMOpen" prefHeight="36.0" prefWidth="89.0" text="RAMs" />
+      <Button fx:id="btnHD" layoutX="257.0" layoutY="123.0" mnemonicParsing="false" onAction="#btnHDOpen" prefHeight="36.0" prefWidth="89.0" text="HDs" />
+      <Button fx:id="btnSSD" layoutX="256.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnSSDOpen" prefHeight="36.0" prefWidth="89.0" text="SSDs" />
+      <Button fx:id="btnPlacaVideo" layoutX="256.0" layoutY="44.0" mnemonicParsing="false" onAction="#btnPlacaVideoOpen" prefHeight="45.0" prefWidth="89.0" text="Placas de &#10;Video" />
+      <Label layoutX="37.0" layoutY="377.0" text="Total de Compras: " />
+      <Label fx:id="lblTotal" layoutX="138.0" layoutY="377.0" prefHeight="17.0" prefWidth="89.0" text="0" />
+      <Button fx:id="btnProcessador" layoutX="249.0" layoutY="278.0" mnemonicParsing="false" onAction="#btnProcessadorOpen" prefHeight="36.0" prefWidth="100.0" text="Processadores" />
+      <Button fx:id="btnTeclado" layoutX="418.0" layoutY="278.0" mnemonicParsing="false" onAction="#btnTecladoOpen" prefHeight="36.0" prefWidth="89.0" text="Teclados" />
+      <Button fx:id="btnMouse" layoutX="91.0" layoutY="278.0" mnemonicParsing="false" onAction="#btnMouseOpen" prefHeight="36.0" prefWidth="89.0" text="Mouses" />
    </children>
 </AnchorPane>
