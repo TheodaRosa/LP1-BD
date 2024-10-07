@@ -1,21 +1,23 @@
+package org.lojanova.lojanova;
+
 import java.util.Scanner;
 
-public class Teclado {
+public class Fonte {
     private String modelo;
-    private String switches;
+    private int Watts;
     static float preco;
 
-    public void opcoesTeclado(String modelo, String switches, float preco) {
-        Teclado.preco = preco;
-        System.out.printf("Modelo: %s \nSwitch: %s \nPreço: %.2f \n \n ", modelo, switches, preco);
+    public void opcoesFonte(String modelo, int Watts, float preco) {
+        Fonte.preco = preco;
+        System.out.printf("Modelo: %s \nWatts: %d \nPreço: %.2f \n \n ", modelo, Watts, preco);
     }
 
     public static float getPreco (){
         return preco;
     }
 
-    static void tecladoEscolhas() {
-        Teclado teclado = new Teclado();
+    static void fonteEscolhas() {
+        Fonte fonte = new Fonte();
         Scanner entrada = new Scanner(System.in);
         int escolha;
         int i = 1;
@@ -24,15 +26,15 @@ public class Teclado {
             switch (i) {
                 case 1:
                     System.out.println("1. ");
-                    teclado.opcoesTeclado("Redragon", "Marrom", 125);
+                    fonte.opcoesFonte("Duex", 230, 200);
                     break;
                 case 2:
                     System.out.println("2. ");
-                    teclado.opcoesTeclado("Logitech", "Azul", 350);
+                    fonte.opcoesFonte("Gigabyte", 500, 250);
                     break;
                 case 3:
                     System.out.println("3. ");
-                    teclado.opcoesTeclado("Razer", "Vermelho", 700);
+                    fonte.opcoesFonte("Corsair", 550, 800);
                     break;
                 case 4:
                     System.out.println("0. Sair");
@@ -41,19 +43,19 @@ public class Teclado {
                     System.out.println("Opção invalida");
             }
             i++;
-        } while(i != 5);
+        }while (i != 5);
 
         do {
             escolha = entrada.nextInt();
             switch (escolha) {
                 case 1:
-                    teclado.opcoesTeclado("Redragon", "Marrom", 125);
+                    fonte.opcoesFonte("Duex", 230, 200);
                     break;
                 case 2:
-                    teclado.opcoesTeclado("Logitech", "Azul", 350);
+                    fonte.opcoesFonte("Gigabyte", 500, 250);
                     break;
                 case 3:
-                    teclado.opcoesTeclado("Razer", "Vermelho", 700);
+                    fonte.opcoesFonte("Corsair", 550, 800);
                     break;
                 case 0:
                     break;

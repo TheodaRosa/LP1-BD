@@ -1,21 +1,23 @@
+package org.lojanova.lojanova;
+
 import java.util.Scanner;
 
-public class Monitor {
+public class SSD {
     private String modelo;
-    private String hertz;
-    private static float preco;
+    private int GB;
+    static float preco;
 
-    public void comprarMonitor(String modelo, String hertz, float preco) {
-        Teclado.preco = preco;
-        System.out.printf("Modelo: %s \nCor: %s \nPreço: %.2f \n \n ", modelo, hertz, preco);
+    public void opcoesSSD(String modelo, int GB, float preco) {
+        SSD.preco = preco;
+        System.out.printf("Modelo: %s \nMemória: %d \nPreço: %.2f \n \n ", modelo, GB, preco);
     }
 
     public static float getPreco (){
         return preco;
     }
 
-    static void monitorEscolhas() {
-        Monitor monitor = new Monitor();
+    static void ssdEscolhas() {
+        SSD ssd = new SSD();
         Scanner entrada = new Scanner(System.in);
         int escolha;
         int i = 1;
@@ -24,15 +26,15 @@ public class Monitor {
             switch (i) {
                 case 1:
                     System.out.println("1. ");
-                    monitor.comprarMonitor("Acer", "60HZ", 400);
+                    ssd.opcoesSSD("SanDisk", 250, 100);
                     break;
                 case 2:
                     System.out.println("2. ");
-                    monitor.comprarMonitor("AOC", "144HZ", 800);
+                    ssd.opcoesSSD("SanDisk", 500, 200);
                     break;
                 case 3:
                     System.out.println("3. ");
-                    monitor.comprarMonitor("LG", "240HZ", 1600);
+                    ssd.opcoesSSD("Kingston", 960, 350);
                     break;
                 case 4:
                     System.out.println("0. Sair");
@@ -47,13 +49,13 @@ public class Monitor {
             escolha = entrada.nextInt();
             switch (escolha) {
                 case 1:
-                    monitor.comprarMonitor("Acer", "60HZ", 400);
+                    ssd.opcoesSSD("SanDisk", 250, 100);
                     break;
                 case 2:
-                    monitor.comprarMonitor("AOC", "144HZ", 800);
+                    ssd.opcoesSSD("SanDisk", 500, 200);
                     break;
                 case 3:
-                    monitor.comprarMonitor("LG", "240HZ", 1600);
+                    ssd.opcoesSSD("Kingston", 960, 350);
                     break;
                 case 0:
                     break;

@@ -1,21 +1,23 @@
+package org.lojanova.lojanova;
+
 import java.util.Scanner;
 
-public class PlacaMae {
+public class Mouse {
     private String modelo;
-    private String geracao;
-    static float preco;
+    private int dpi;
+    private static float preco;
 
-    public void opcoesPlacaMae(String modelo, String geracao, float preco) {
-        PlacaMae.preco = preco;
-        System.out.printf("Modelo: %s \nGeracao: %s \nPreço: %.2f \n \n ", modelo, geracao, preco);
+    public void opcoesMouse(String modelo, int dpi, float preco) {
+        Mouse.preco = preco;
+        System.out.printf("Modelo: %s \nDPI: %d \nPreço: %.2f \n \n ", modelo, dpi, preco);
     }
 
     public static float getPreco (){
         return preco;
     }
 
-    static void PlacaMaeEscolhas() {
-        PlacaMae placaMae = new PlacaMae();
+    static void mousesEscolhas() {
+        Mouse mouse = new Mouse();
         Scanner entrada = new Scanner(System.in);
         int escolha;
         int i = 1;
@@ -24,15 +26,15 @@ public class PlacaMae {
             switch (i) {
                 case 1:
                     System.out.println("1. ");
-                    placaMae.opcoesPlacaMae("Gigabyte", "B760M", 1500);
+                    mouse.opcoesMouse("Redragon", 800, 200);
                     break;
                 case 2:
                     System.out.println("2. ");
-                    placaMae.opcoesPlacaMae("AMD", "5700x", 2700);
+                    mouse.opcoesMouse("Logitech", 1600, 400);
                     break;
                 case 3:
                     System.out.println("3. ");
-                    placaMae.opcoesPlacaMae("Asus", "Z790", 4800);
+                    mouse.opcoesMouse("Razer", 2400, 600);
                     break;
                 case 4:
                     System.out.println("0. Sair");
@@ -48,13 +50,13 @@ public class PlacaMae {
             escolha = entrada.nextInt();
             switch (escolha) {
                 case 1:
-                    placaMae.opcoesPlacaMae("Gigabyte", "B760M", 1500);
+                    mouse.opcoesMouse("Redragon", 800, 200);
                     break;
                 case 2:
-                    placaMae.opcoesPlacaMae("AMD", "5700x", 2700);
+                    mouse.opcoesMouse("Logitech", 1600, 400);
                     break;
                 case 3:
-                    placaMae.opcoesPlacaMae("Asus", "Z790", 4800);
+                    mouse.opcoesMouse("Razer", 2400, 600);
                     break;
                 case 0:
                     break;

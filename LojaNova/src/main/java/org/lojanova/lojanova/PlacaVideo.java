@@ -1,38 +1,40 @@
+package org.lojanova.lojanova;
+
 import java.util.Scanner;
 
-public class Mouse {
+public class PlacaVideo {
     private String modelo;
-    private int dpi;
-    private static float preco;
+    private String geracao;
+    static float preco;
 
-    public void opcoesMouse(String modelo, int dpi, float preco) {
-        Mouse.preco = preco;
-        System.out.printf("Modelo: %s \nDPI: %d \nPreço: %.2f \n \n ", modelo, dpi, preco);
+    public void opcoesPlacaVideo(String modelo, String geracao, float preco) {
+        PlacaVideo.preco = preco;
+        System.out.printf("Modelo: %s \nGeracao: %s \nPreço: %.2f \n \n ", modelo, geracao, preco);
     }
 
     public static float getPreco (){
         return preco;
     }
 
-    static void mousesEscolhas() {
-        Mouse mouse = new Mouse();
+    static void PlacaVideoEscolhas() {
+        PlacaVideo placaVideo = new PlacaVideo();
         Scanner entrada = new Scanner(System.in);
         int escolha;
-        int i = 1;
 
+        int i = 1;
         do {
             switch (i) {
                 case 1:
                     System.out.println("1. ");
-                    mouse.opcoesMouse("Redragon", 800, 200);
+                    placaVideo.opcoesPlacaVideo("NVidia", "3060", 1400);
                     break;
                 case 2:
                     System.out.println("2. ");
-                    mouse.opcoesMouse("Logitech", 1600, 400);
+                    placaVideo.opcoesPlacaVideo("AMD", "RX 6600", 1500);
                     break;
                 case 3:
                     System.out.println("3. ");
-                    mouse.opcoesMouse("Razer", 2400, 600);
+                    placaVideo.opcoesPlacaVideo("NVidia", "GeForce 4060", 2600);
                     break;
                 case 4:
                     System.out.println("0. Sair");
@@ -48,13 +50,13 @@ public class Mouse {
             escolha = entrada.nextInt();
             switch (escolha) {
                 case 1:
-                    mouse.opcoesMouse("Redragon", 800, 200);
+                    placaVideo.opcoesPlacaVideo("NVidia", "3060", 1400);
                     break;
                 case 2:
-                    mouse.opcoesMouse("Logitech", 1600, 400);
+                    placaVideo.opcoesPlacaVideo("AMD", "RX 6600", 1500);
                     break;
                 case 3:
-                    mouse.opcoesMouse("Razer", 2400, 600);
+                    placaVideo.opcoesPlacaVideo("NVidia", "GeForce 4060", 2600);
                     break;
                 case 0:
                     break;

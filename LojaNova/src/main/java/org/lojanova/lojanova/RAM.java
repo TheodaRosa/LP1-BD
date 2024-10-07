@@ -1,21 +1,23 @@
+package org.lojanova.lojanova;
+
 import java.util.Scanner;
 
-public class HD {
+public class RAM {
     private String modelo;
     private int GB;
     static float preco;
 
-    public void opcoesHD(String modelo, int GB, float preco) {
-        HD.preco = preco;
-        System.out.printf("Modelo: %s \nMemoria: %d \nPreço: %.2f \n \n ", modelo, GB, preco);
+    public void opcoesRAM(String modelo, int GB, float preco) {
+        RAM.preco = preco;
+        System.out.printf("Modelo: %s \nMemória: %d \nPreço: %.2f \n \n ", modelo, GB, preco);
     }
 
     public static float getPreco (){
         return preco;
     }
 
-    static void hdEscolhas() {
-        HD hd = new HD();
+    static void ramEscolhas() {
+        RAM ram = new RAM();
         Scanner entrada = new Scanner(System.in);
         int escolha;
         int i = 1;
@@ -24,22 +26,21 @@ public class HD {
             switch (i) {
                 case 1:
                     System.out.println("1. ");
-                    hd.opcoesHD("Seagate", 500, 50);
+                    ram.opcoesRAM("Samsung", 4, 50);
                     break;
                 case 2:
                     System.out.println("2. ");
-                    hd.opcoesHD("WD", 1000, 150);
+                    ram.opcoesRAM("XPG", 8, 150);
                     break;
                 case 3:
                     System.out.println("3. ");
-                    hd.opcoesHD("Seagate", 4000, 350);
+                    ram.opcoesRAM("Corsair", 16, 300);
                     break;
                 case 4:
                     System.out.println("0. Sair");
                     break;
                 default:
                     System.out.println("Opção invalida");
-
             }
             i++;
         }while (i != 5);
@@ -48,13 +49,13 @@ public class HD {
             escolha = entrada.nextInt();
             switch (escolha) {
                 case 1:
-                    hd.opcoesHD("Seagate", 500, 50);
+                    ram.opcoesRAM("Samsung", 4, 50);
                     break;
                 case 2:
-                    hd.opcoesHD("WD", 1000, 150);
+                    ram.opcoesRAM("XPG", 8, 150);
                     break;
                 case 3:
-                    hd.opcoesHD("Seagate", 4000, 350);
+                    ram.opcoesRAM("Corsair", 16, 300);
                     break;
                 case 0:
                     break;

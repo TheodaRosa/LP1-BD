@@ -1,21 +1,23 @@
+package org.lojanova.lojanova;
+
 import java.util.Scanner;
 
-public class SSD {
+public class Gabinete {
     private String modelo;
-    private int GB;
-    static float preco;
+    private String cor;
+    private static float preco;
 
-    public void opcoesSSD(String modelo, int GB, float preco) {
-        SSD.preco = preco;
-        System.out.printf("Modelo: %s \nMemória: %d \nPreço: %.2f \n \n ", modelo, GB, preco);
+    public void opcoesGabinete(String modelo, String cor, float preco) {
+        Gabinete.preco = preco;
+        System.out.printf("Modelo: %s \n Cor: %s \n Preço: %.2f \n \n ", modelo, cor, preco);
     }
 
-    public static float getPreco (){
+    public static float getPreco(){
         return preco;
     }
 
-    static void ssdEscolhas() {
-        SSD ssd = new SSD();
+    static void gabinetesEscolhas() {
+        Gabinete gabinete = new Gabinete();
         Scanner entrada = new Scanner(System.in);
         int escolha;
         int i = 1;
@@ -24,15 +26,15 @@ public class SSD {
             switch (i) {
                 case 1:
                     System.out.println("1. ");
-                    ssd.opcoesSSD("SanDisk", 250, 100);
+                    gabinete.opcoesGabinete("Pequeno", "Preto", 500);
                     break;
                 case 2:
                     System.out.println("2. ");
-                    ssd.opcoesSSD("SanDisk", 500, 200);
+                    gabinete.opcoesGabinete("Médio", "Cinza", 600);
                     break;
                 case 3:
                     System.out.println("3. ");
-                    ssd.opcoesSSD("Kingston", 960, 350);
+                    gabinete.opcoesGabinete("Grande", "Branco", 800);
                     break;
                 case 4:
                     System.out.println("0. Sair");
@@ -47,13 +49,13 @@ public class SSD {
             escolha = entrada.nextInt();
             switch (escolha) {
                 case 1:
-                    ssd.opcoesSSD("SanDisk", 250, 100);
+                    gabinete.opcoesGabinete("Pequeno", "Preto", 500);
                     break;
                 case 2:
-                    ssd.opcoesSSD("SanDisk", 500, 200);
+                    gabinete.opcoesGabinete("Médio", "Cinza", 600);
                     break;
                 case 3:
-                    ssd.opcoesSSD("Kingston", 960, 350);
+                    gabinete.opcoesGabinete("Grande", "Branco", 800);
                     break;
                 case 0:
                     break;

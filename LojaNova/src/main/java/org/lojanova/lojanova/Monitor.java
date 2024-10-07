@@ -1,21 +1,23 @@
+package org.lojanova.lojanova;
+
 import java.util.Scanner;
 
-public class Fonte {
+public class Monitor {
     private String modelo;
-    private int Watts;
-    static float preco;
+    private String hertz;
+    private static float preco;
 
-    public void opcoesFonte(String modelo, int Watts, float preco) {
-        Fonte.preco = preco;
-        System.out.printf("Modelo: %s \nWatts: %d \nPreço: %.2f \n \n ", modelo, Watts, preco);
+    public void comprarMonitor(String modelo, String hertz, float preco) {
+        Teclado.preco = preco;
+        System.out.printf("Modelo: %s \nCor: %s \nPreço: %.2f \n \n ", modelo, hertz, preco);
     }
 
     public static float getPreco (){
         return preco;
     }
 
-    static void fonteEscolhas() {
-        Fonte fonte = new Fonte();
+    static void monitorEscolhas() {
+        Monitor monitor = new Monitor();
         Scanner entrada = new Scanner(System.in);
         int escolha;
         int i = 1;
@@ -24,15 +26,15 @@ public class Fonte {
             switch (i) {
                 case 1:
                     System.out.println("1. ");
-                    fonte.opcoesFonte("Duex", 230, 200);
+                    monitor.comprarMonitor("Acer", "60HZ", 400);
                     break;
                 case 2:
                     System.out.println("2. ");
-                    fonte.opcoesFonte("Gigabyte", 500, 250);
+                    monitor.comprarMonitor("AOC", "144HZ", 800);
                     break;
                 case 3:
                     System.out.println("3. ");
-                    fonte.opcoesFonte("Corsair", 550, 800);
+                    monitor.comprarMonitor("LG", "240HZ", 1600);
                     break;
                 case 4:
                     System.out.println("0. Sair");
@@ -47,13 +49,13 @@ public class Fonte {
             escolha = entrada.nextInt();
             switch (escolha) {
                 case 1:
-                    fonte.opcoesFonte("Duex", 230, 200);
+                    monitor.comprarMonitor("Acer", "60HZ", 400);
                     break;
                 case 2:
-                    fonte.opcoesFonte("Gigabyte", 500, 250);
+                    monitor.comprarMonitor("AOC", "144HZ", 800);
                     break;
                 case 3:
-                    fonte.opcoesFonte("Corsair", 550, 800);
+                    monitor.comprarMonitor("LG", "240HZ", 1600);
                     break;
                 case 0:
                     break;

@@ -1,3 +1,5 @@
+package org.lojanova.lojanova;
+
 import java.util.Scanner;
 
 public class Processador {

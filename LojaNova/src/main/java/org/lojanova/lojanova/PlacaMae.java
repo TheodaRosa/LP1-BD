@@ -1,21 +1,23 @@
+package org.lojanova.lojanova;
+
 import java.util.Scanner;
 
-public class Gabinete {
+public class PlacaMae {
     private String modelo;
-    private String cor;
-    private static float preco;
+    private String geracao;
+    static float preco;
 
-    public void opcoesGabinete(String modelo, String cor, float preco) {
-        Gabinete.preco = preco;
-        System.out.printf("Modelo: %s \n Cor: %s \n Preço: %.2f \n \n ", modelo, cor, preco);
+    public void opcoesPlacaMae(String modelo, String geracao, float preco) {
+        PlacaMae.preco = preco;
+        System.out.printf("Modelo: %s \nGeracao: %s \nPreço: %.2f \n \n ", modelo, geracao, preco);
     }
 
-    public static float getPreco(){
+    public static float getPreco (){
         return preco;
     }
 
-    static void gabinetesEscolhas() {
-        Gabinete gabinete = new Gabinete();
+    static void PlacaMaeEscolhas() {
+        PlacaMae placaMae = new PlacaMae();
         Scanner entrada = new Scanner(System.in);
         int escolha;
         int i = 1;
@@ -24,21 +26,22 @@ public class Gabinete {
             switch (i) {
                 case 1:
                     System.out.println("1. ");
-                    gabinete.opcoesGabinete("Pequeno", "Preto", 500);
+                    placaMae.opcoesPlacaMae("Gigabyte", "B760M", 1500);
                     break;
                 case 2:
                     System.out.println("2. ");
-                    gabinete.opcoesGabinete("Médio", "Cinza", 600);
+                    placaMae.opcoesPlacaMae("AMD", "5700x", 2700);
                     break;
                 case 3:
                     System.out.println("3. ");
-                    gabinete.opcoesGabinete("Grande", "Branco", 800);
+                    placaMae.opcoesPlacaMae("Asus", "Z790", 4800);
                     break;
                 case 4:
                     System.out.println("0. Sair");
                     break;
                 default:
                     System.out.println("Opção invalida");
+
             }
             i++;
         }while (i != 5);
@@ -47,13 +50,13 @@ public class Gabinete {
             escolha = entrada.nextInt();
             switch (escolha) {
                 case 1:
-                    gabinete.opcoesGabinete("Pequeno", "Preto", 500);
+                    placaMae.opcoesPlacaMae("Gigabyte", "B760M", 1500);
                     break;
                 case 2:
-                    gabinete.opcoesGabinete("Médio", "Cinza", 600);
+                    placaMae.opcoesPlacaMae("AMD", "5700x", 2700);
                     break;
                 case 3:
-                    gabinete.opcoesGabinete("Grande", "Branco", 800);
+                    placaMae.opcoesPlacaMae("Asus", "Z790", 4800);
                     break;
                 case 0:
                     break;
