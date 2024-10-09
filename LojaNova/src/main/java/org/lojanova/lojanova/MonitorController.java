@@ -1,32 +1,69 @@
 package org.lojanova.lojanova;
 
-import java.net.URL;
-import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.stage.Stage;
+import javafx.scene.control.Label;
 
 public class MonitorController {
 
     @FXML
-    private ResourceBundle resources;
+    private Button btnComprar1;
 
     @FXML
-    private URL location;
+    private Button btnComprar3;
+
+    @FXML
+    private Button btnComprar2;
+
+    @FXML
+    private Label lblMarca2;
 
     @FXML
     private Button btnFechar;
 
     @FXML
-    void btnMonitorClose(ActionEvent event) {
-        Stage stage = (Stage) btnFechar.getScene().getWindow();
-        stage.close();
+    private Label lblMarca3;
+
+    @FXML
+    private Label lblMarca1;
+
+    @FXML
+    private Label lblModelo3;
+
+    @FXML
+    private Label lblModelo2;
+
+    @FXML
+    private Label lblModelo1;
+
+    @FXML
+    private Label lblPreco1;
+
+    @FXML
+    private Label lblPreco2;
+
+    @FXML
+    private Label lblPreco3;
+
+    @FXML
+    void comprar2(ActionEvent event) {
+
     }
 
     @FXML
-    void initialize() {
+    void comprar3(ActionEvent event) {
 
     }
+
+    @FXML
+    void comprar1(ActionEvent event) {
+
+    }
+
+    @FXML
+    void btnMonitorClose(ActionEvent event) {
+
+    }
+
 }

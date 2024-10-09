@@ -1,6 +1,5 @@
 package org.lojanova.lojanova;
 
-import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -63,14 +62,15 @@ public class LojaNovaController {
     private Button btnCooler;
 
     @FXML
-    void btnFinalizarCompras(ActionEvent event) {
-
+    public void btnFinalizarCompras(javafx.event.ActionEvent event) {
+        Stage stage = (Stage) btnFinalizar.getScene().getWindow();
+        stage.close();
     }
 
     @FXML
-    void btnMonitorOpen(ActionEvent event) {
+    public void btnMonitorOpen(javafx.event.ActionEvent event) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/hello-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/monitor_view.fxml"));
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
@@ -86,9 +86,9 @@ public class LojaNovaController {
     }
 
     @FXML
-    void btnPlacaMaeOpen(ActionEvent event) {
+    public void btnPlacaMaeOpen(javafx.event.ActionEvent event) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/hello-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/placa_mae_view.fxml"));
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
@@ -104,9 +104,9 @@ public class LojaNovaController {
     }
 
     @FXML
-    void btnGabineteOpen(ActionEvent event) {
+    public void btnGabineteOpen(javafx.event.ActionEvent event) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/hello-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/gabinete_view.fxml"));
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
@@ -122,9 +122,9 @@ public class LojaNovaController {
     }
 
     @FXML
-    void btnCoolerOpen(ActionEvent event) {
+    public void btnCoolerOpen(javafx.event.ActionEvent event) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/hello-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/cooler_view.fxml"));
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
@@ -140,9 +140,9 @@ public class LojaNovaController {
     }
 
     @FXML
-    void btnFonteOpen(ActionEvent event) {
+    public void btnFonteOpen(javafx.event.ActionEvent event) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/hello-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/fonte_view.fxml"));
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
@@ -158,9 +158,9 @@ public class LojaNovaController {
     }
 
     @FXML
-    void btnRAMOpen(ActionEvent event) {
+    public void btnRAMOpen(javafx.event.ActionEvent event) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/hello-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/ram_view.fxml"));
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
@@ -176,9 +176,9 @@ public class LojaNovaController {
     }
 
     @FXML
-    void btnHDOpen(ActionEvent event) {
+    public void btnHDOpen(javafx.event.ActionEvent event) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/hello-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/hd_view.fxml"));
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
@@ -194,9 +194,9 @@ public class LojaNovaController {
     }
 
     @FXML
-    void btnSSDOpen(ActionEvent event) {
+    public void btnSSDOpen(javafx.event.ActionEvent event) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/hello-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/ssd_view.fxml"));
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
@@ -212,9 +212,9 @@ public class LojaNovaController {
     }
 
     @FXML
-    void btnPlacaVideoOpen(ActionEvent event) {
+    public void btnPlacaVideoOpen(javafx.event.ActionEvent event) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/hello-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/placa_video_view.fxml"));
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
@@ -230,9 +230,9 @@ public class LojaNovaController {
     }
 
     @FXML
-    void btnProcessadorOpen(ActionEvent event) {
+    public void btnProcessadorOpen(javafx.event.ActionEvent event) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/hello-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/processador_view.fxml"));
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
@@ -248,9 +248,9 @@ public class LojaNovaController {
     }
 
     @FXML
-    void btnTecladoOpen(ActionEvent event) {
+    public void btnTecladoOpen(javafx.event.ActionEvent event) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/hello-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/teclado_view.fxml"));
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
@@ -266,9 +266,9 @@ public class LojaNovaController {
     }
 
     @FXML
-    void btnMouseOpen(ActionEvent event) {
+    public void btnMouseOpen(javafx.event.ActionEvent event) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/hello-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(LojaNovaController.class.getResource("/org/lojanova/lojanova/mouse_view.fxml"));
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
@@ -286,4 +286,6 @@ public class LojaNovaController {
     @FXML
     void initialize(){
     }
+
+
 }

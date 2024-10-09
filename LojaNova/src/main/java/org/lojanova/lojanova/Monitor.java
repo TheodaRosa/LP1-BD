@@ -8,7 +8,7 @@ public class Monitor {
     private static float preco;
 
     public void comprarMonitor(String modelo, String hertz, float preco) {
-        Teclado.preco = preco;
+        Monitor.preco = preco;
         System.out.printf("Modelo: %s \nCor: %s \nPreço: %.2f \n \n ", modelo, hertz, preco);
     }
 
