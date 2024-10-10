@@ -10,9 +10,20 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Button?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.lojanova.lojanova.MonitorController">
    <children>
-      <Button fx:id="btnFechar" layoutX="274.0" layoutY="284.0" mnemonicParsing="false" onAction="#btnMonitorClose" text="Button" />
+      <Label layoutX="259.0" layoutY="68.0" prefHeight="39.0" prefWidth="74.0" text="Acer" />
+      <Label layoutX="259.0" layoutY="163.0" prefHeight="39.0" prefWidth="74.0" text="1500" />
+      <Label layoutX="259.0" layoutY="117.0" prefHeight="39.0" prefWidth="74.0" text="144 hz" />
+      <Label layoutX="425.0" layoutY="70.0" prefHeight="39.0" prefWidth="74.0" text="AOC" />
+      <Label layoutX="425.0" layoutY="165.0" prefHeight="39.0" prefWidth="74.0" text="2000" />
+      <Label layoutX="425.0" layoutY="119.0" prefHeight="39.0" prefWidth="74.0" text="240hz" />
+      <Label layoutX="101.0" layoutY="115.0" prefHeight="39.0" prefWidth="74.0" text="60hz" />
+      <Label layoutX="101.0" layoutY="161.0" prefHeight="39.0" prefWidth="74.0" text="1000" />
+      <Label layoutX="101.0" layoutY="66.0" prefHeight="39.0" prefWidth="74.0" text="LG" />
+      <Button layoutX="270.0" layoutY="235.0" mnemonicParsing="false" text="Comprar 2" />
+      <Button layoutX="436.0" layoutY="235.0" mnemonicParsing="false" text="Comprar 3" />
+      <Button layoutX="112.0" layoutY="235.0" mnemonicParsing="false" text="Comprar 1" />
+      <Button fx:id="btnFechar1" layoutX="270.0" layoutY="284.0" mnemonicParsing="false" onAction="#btnMonitorClose" text="Fechar" />
    </children>
 </Pane>

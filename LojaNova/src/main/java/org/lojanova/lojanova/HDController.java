@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
 public class HDController {
 
@@ -46,19 +47,28 @@ public class HDController {
     @FXML
     private Label lblPreco3;
 
+    int compra;
+    HD hd = new HD();
+
     @FXML
     void comprar2(ActionEvent event) {
-
+        this.compra += Integer.parseInt(lblPreco2.getText());
+        hd.setCompra(this.compra);
+        System.out.println("Compra feita com Sucesso!");
     }
 
     @FXML
     void comprar3(ActionEvent event) {
-
+        this.compra += Integer.parseInt(lblPreco3.getText());
+        hd.setCompra(this.compra);
+        System.out.println("Compra feita com Sucesso!");
     }
 
     @FXML
     void comprar1(ActionEvent event) {
-
+        this.compra += Integer.parseInt(lblPreco1.getText());
+        hd.setCompra(this.compra);
+        System.out.println("Compra feita com Sucesso!");
     }
 
     @FXML

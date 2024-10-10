@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
 public class MouseController {
 
@@ -46,24 +47,34 @@ public class MouseController {
     @FXML
     private Label lblPreco3;
 
+    int compra;
+    Mouse mouse = new Mouse();
+
     @FXML
     void comprar2(ActionEvent event) {
-
+        this.compra += Integer.parseInt(lblPreco2.getText());
+        mouse.setCompra(this.compra);
+        System.out.println("Compra feita com Sucesso!");
     }
 
     @FXML
     void comprar3(ActionEvent event) {
-
+        this.compra += Integer.parseInt(lblPreco3.getText());
+        mouse.setCompra(this.compra);
+        System.out.println("Compra feita com Sucesso!");
     }
 
     @FXML
     void comprar1(ActionEvent event) {
-
+        this.compra += Integer.parseInt(lblPreco1.getText());
+        mouse.setCompra(this.compra);
+        System.out.println("Compra feita com Sucesso!");
     }
 
     @FXML
     void btnMonitorClose(ActionEvent event) {
-
+        Stage stage = (Stage) btnFechar.getScene().getWindow();
+        stage.close();
     }
 
 }
