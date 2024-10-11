@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
+
 public class LojaNovaController {
     int valor;
     @FXML
@@ -63,6 +64,7 @@ public class LojaNovaController {
 
     @FXML
     public void btnFinalizarCompras(javafx.event.ActionEvent event) {
+        System.out.println("Obrigado por comprar na minha loja! O total foi de R$"+valor);
         Stage stage = (Stage) btnFinalizar.getScene().getWindow();
         stage.close();
     }
@@ -84,7 +86,8 @@ public class LojaNovaController {
             e.printStackTrace();
         }
         Monitor monitor = new Monitor();
-        lblTotal.setText(Integer.toString(valor += monitor.getCompra()));
+        valor += monitor.getCompra();
+        lblTotal.setText(Integer.toString(valor));
     }
 
     @FXML
@@ -104,7 +107,9 @@ public class LojaNovaController {
             e.printStackTrace();
         }
         PlacaMae placaMae = new PlacaMae();
-        lblTotal.setText(Integer.toString(valor += placaMae.getCompra()));    }
+        valor += placaMae.getCompra();
+        lblTotal.setText(Integer.toString(valor));
+    }
 
     @FXML
     public void btnGabineteOpen(javafx.event.ActionEvent event) {
@@ -123,7 +128,9 @@ public class LojaNovaController {
             e.printStackTrace();
         }
         Gabinete gabinete = new Gabinete();
-        lblTotal.setText(Integer.toString(valor += gabinete.getCompra()));    }
+        valor += gabinete.getCompra();
+        lblTotal.setText(Integer.toString(valor));
+    }
 
     @FXML
     public void btnCoolerOpen(javafx.event.ActionEvent event) {
@@ -142,7 +149,8 @@ public class LojaNovaController {
             e.printStackTrace();
         }
         Cooler cooler = new Cooler();
-        lblTotal.setText(Integer.toString(valor += cooler.getCompra()));    }
+        valor += cooler.getCompra();
+        lblTotal.setText(Integer.toString(valor));    }
 
     @FXML
     public void btnFonteOpen(javafx.event.ActionEvent event) {
@@ -161,7 +169,8 @@ public class LojaNovaController {
             e.printStackTrace();
         }
         Fonte fonte = new Fonte();
-        lblTotal.setText(Integer.toString(valor += fonte.getCompra()));    }
+        valor += fonte.getCompra();
+        lblTotal.setText(Integer.toString(valor));    }
 
     @FXML
     public void btnRAMOpen(javafx.event.ActionEvent event) {
@@ -180,7 +189,8 @@ public class LojaNovaController {
             e.printStackTrace();
         }
         RAM ram = new RAM();
-        lblTotal.setText(Integer.toString(valor += ram.getCompra()));    }
+        valor += ram.getCompra();
+        lblTotal.setText(Integer.toString(valor));    }
 
     @FXML
     public void btnHDOpen(javafx.event.ActionEvent event) {
@@ -199,7 +209,8 @@ public class LojaNovaController {
             e.printStackTrace();
         }
         HD hd = new HD();
-        lblTotal.setText(Integer.toString(valor += hd.getCompra()));    }
+        valor += hd.getCompra();
+        lblTotal.setText(Integer.toString(valor));    }
 
     @FXML
     public void btnSSDOpen(javafx.event.ActionEvent event) {
@@ -218,7 +229,8 @@ public class LojaNovaController {
             e.printStackTrace();
         }
         SSD ssd = new SSD();
-        lblTotal.setText(Integer.toString(valor += ssd.getCompra()));
+        valor += ssd.getCompra();
+        lblTotal.setText(Integer.toString(valor));
     }
 
     @FXML
@@ -238,7 +250,8 @@ public class LojaNovaController {
             e.printStackTrace();
         }
         PlacaVideo placa = new PlacaVideo();
-        lblTotal.setText(Integer.toString(valor += placa.getCompra()));    }
+        valor += placa.getCompra();
+        lblTotal.setText(Integer.toString(valor));    }
 
     @FXML
     public void btnProcessadorOpen(javafx.event.ActionEvent event) {
@@ -257,7 +270,8 @@ public class LojaNovaController {
             e.printStackTrace();
         }
         Processador processador = new Processador();
-        lblTotal.setText(Integer.toString(valor += processador.getCompra()));
+        valor += processador.getCompra();
+        lblTotal.setText(Integer.toString(valor));
     }
 
     @FXML
@@ -278,7 +292,8 @@ public class LojaNovaController {
             e.printStackTrace();
         }
         Teclado teclado = new Teclado();
-        lblTotal.setText(Integer.toString(valor += teclado.getCompra()));    }
+        valor += teclado.getCompra();
+        lblTotal.setText(Integer.toString(valor));    }
 
     @FXML
     public void btnMouseOpen(javafx.event.ActionEvent event) {
@@ -297,7 +312,8 @@ public class LojaNovaController {
             e.printStackTrace();
         }
         Mouse mouse = new Mouse();
-        lblTotal.setText(Integer.toString(valor += mouse.getCompra()));    }
+        valor += mouse.getCompra();
+        lblTotal.setText(Integer.toString(valor));    }
 
     @FXML
     void initialize(){
