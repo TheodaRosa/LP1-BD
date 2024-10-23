@@ -10,20 +10,20 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Button?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.lojanova.lojanova.MonitorController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.lojanova.lojanova.MouseController">
    <children>
-      <Label layoutX="259.0" layoutY="81.0" prefHeight="39.0" prefWidth="74.0" text="Logitech" />
-      <Label layoutX="259.0" layoutY="176.0" prefHeight="39.0" prefWidth="74.0" text="300" />
+      <Label fx:id="lblMarca2" layoutX="259.0" layoutY="81.0" prefHeight="39.0" prefWidth="74.0" text="Logitech" />
+      <Label fx:id="lblPreco2" layoutX="259.0" layoutY="176.0" prefHeight="39.0" prefWidth="74.0" text="300" />
       <Label layoutX="259.0" layoutY="130.0" prefHeight="39.0" prefWidth="74.0" text="1600DPI" />
-      <Label layoutX="425.0" layoutY="83.0" prefHeight="39.0" prefWidth="74.0" text="SteelSeries" />
-      <Label layoutX="425.0" layoutY="178.0" prefHeight="39.0" prefWidth="74.0" text="200" />
+      <Label fx:id="lblMarca3" layoutX="425.0" layoutY="83.0" prefHeight="39.0" prefWidth="74.0" text="SteelSeries" />
+      <Label fx:id="lblPreco3" layoutX="425.0" layoutY="178.0" prefHeight="39.0" prefWidth="74.0" text="200" />
       <Label layoutX="425.0" layoutY="132.0" prefHeight="39.0" prefWidth="74.0" text="800DPI" />
       <Label layoutX="101.0" layoutY="128.0" prefHeight="39.0" prefWidth="74.0" text="2400DPI" />
-      <Label layoutX="101.0" layoutY="174.0" prefHeight="39.0" prefWidth="74.0" text="400" />
-      <Label layoutX="101.0" layoutY="79.0" prefHeight="39.0" prefWidth="74.0" text="Razer" />
-      <Button layoutX="270.0" layoutY="248.0" mnemonicParsing="false" text="Comprar 2" />
-      <Button layoutX="436.0" layoutY="248.0" mnemonicParsing="false" text="Comprar 3" />
-      <Button layoutX="112.0" layoutY="248.0" mnemonicParsing="false" text="Comprar 1" />
-      <Button fx:id="btnFechar" layoutX="270.0" layoutY="297.0" mnemonicParsing="false" onAction="#btnMonitorClose" text="Fechar" />
+      <Label fx:id="lblPreco1" layoutX="101.0" layoutY="174.0" prefHeight="39.0" prefWidth="74.0" text="400" />
+      <Label fx:id="lblMarca1" layoutX="101.0" layoutY="79.0" prefHeight="39.0" prefWidth="74.0" text="Razer" />
+      <Button fx:id="btnComprar2" layoutX="270.0" layoutY="248.0" mnemonicParsing="false" onAction="#comprar2" text="Comprar 2" />
+      <Button fx:id="btnComprar3" layoutX="436.0" layoutY="248.0" mnemonicParsing="false" onAction="#comprar3" text="Comprar 3" />
+      <Button fx:id="btnComprar1" layoutX="112.0" layoutY="248.0" mnemonicParsing="false" onAction="#comprar1" text="Comprar 1" />
+      <Button fx:id="btnFechar" layoutX="270.0" layoutY="297.0" mnemonicParsing="false" onAction="#btnMouseClose" text="Fechar" />
    </children>
 </Pane>

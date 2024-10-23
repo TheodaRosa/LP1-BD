@@ -47,28 +47,25 @@ public class MonitorController {
     @FXML
     private Label lblPreco3;
 
-    int compra;
-    Monitor monitor = new Monitor();
+    static int compra;
+    public static int valor(){return compra;};
 
     @FXML
     void comprar2(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco2.getText());
-        monitor.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+        LojaNovaController.valor += Integer.parseInt(lblPreco2.getText());
+        System.out.println("Compra feita com Sucesso! "+lblModelo2.getText());
     }
 
     @FXML
     void comprar3(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco3.getText());
-        monitor.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+        LojaNovaController.valor += Integer.parseInt(lblPreco3.getText());
+        System.out.println("Compra feita com Sucesso! "+lblModelo3.getText());
     }
 
     @FXML
     void comprar1(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco1.getText());
-        monitor.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+        LojaNovaController.valor += Integer.parseInt(lblPreco1.getText());
+        System.out.println("Compra feita com Sucesso! "+lblModelo1.getText());
     }
 
     @FXML

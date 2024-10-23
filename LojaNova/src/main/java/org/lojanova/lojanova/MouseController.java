@@ -47,32 +47,29 @@ public class MouseController {
     @FXML
     private Label lblPreco3;
 
-    int compra;
-    Mouse mouse = new Mouse();
+    static int compra;
+    public static int valor(){return compra;};
 
     @FXML
     void comprar2(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco2.getText());
-        mouse.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+        LojaNovaController.valor += Integer.parseInt(lblPreco2.getText());
+        System.out.println("Compra feita com Sucesso! "+lblMarca2.getText());
     }
 
     @FXML
     void comprar3(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco3.getText());
-        mouse.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+        LojaNovaController.valor += Integer.parseInt(lblPreco3.getText());
+        System.out.println("Compra feita com Sucesso! "+lblMarca3.getText());
     }
 
     @FXML
     void comprar1(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco1.getText());
-        mouse.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+        LojaNovaController.valor += Integer.parseInt(lblPreco1.getText());
+        System.out.println("Compra feita com Sucesso! "+lblMarca1.getText());
     }
 
     @FXML
-    void btnMonitorClose(ActionEvent event) {
+    void btnMouseClose(ActionEvent event) {
         Stage stage = (Stage) btnFechar.getScene().getWindow();
         stage.close();
     }

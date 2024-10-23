@@ -10,20 +10,20 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Button?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.lojanova.lojanova.MonitorController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.lojanova.lojanova.CoolerController">
    <children>
-      <Button fx:id="btnFechar" layoutX="274.0" layoutY="284.0" mnemonicParsing="false" onAction="#btnMonitorClose" text="Fechar" />
-      <Button layoutX="116.0" layoutY="235.0" mnemonicParsing="false" text="Comprar 1" />
-      <Button layoutX="440.0" layoutY="235.0" mnemonicParsing="false" text="Comprar 3" />
-      <Button layoutX="274.0" layoutY="235.0" mnemonicParsing="false" text="Comprar 2" />
-      <Label layoutX="105.0" layoutY="66.0" prefHeight="39.0" prefWidth="74.0" text="Corsair" />
-      <Label layoutX="105.0" layoutY="161.0" prefHeight="39.0" prefWidth="74.0" text="200" />
-      <Label layoutX="105.0" layoutY="115.0" prefHeight="39.0" prefWidth="74.0" text="Air 180mm" />
-      <Label layoutX="429.0" layoutY="119.0" prefHeight="39.0" prefWidth="74.0" text="Water" />
-      <Label layoutX="429.0" layoutY="165.0" prefHeight="39.0" prefWidth="74.0" text="400" />
-      <Label layoutX="429.0" layoutY="70.0" prefHeight="39.0" prefWidth="74.0" text="Corsair" />
-      <Label layoutX="263.0" layoutY="117.0" prefHeight="39.0" prefWidth="74.0" text="Air 240mm" />
-      <Label layoutX="263.0" layoutY="163.0" prefHeight="39.0" prefWidth="74.0" text="300" />
-      <Label layoutX="263.0" layoutY="68.0" prefHeight="39.0" prefWidth="74.0" text="Corsair" />
+      <Button fx:id="btnFechar" layoutX="274.0" layoutY="284.0" mnemonicParsing="false" onAction="#btnCoolerClose" text="Fechar" />
+      <Button fx:id="btnComprar1" layoutX="116.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnComprarCooler1" text="Comprar 1" />
+      <Button fx:id="btnComprar3" layoutX="440.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnComprarCooler3" text="Comprar 3" />
+      <Button fx:id="btnComprar2" layoutX="274.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnComprarCooler2" text="Comprar 2" />
+      <Label fx:id="lblMarca1" layoutX="105.0" layoutY="66.0" prefHeight="39.0" prefWidth="74.0" text="Corsair" />
+      <Label fx:id="lblPreco1" layoutX="105.0" layoutY="161.0" prefHeight="39.0" prefWidth="74.0" text="200" />
+      <Label fx:id="lblModelo1" layoutX="105.0" layoutY="115.0" prefHeight="39.0" prefWidth="74.0" text="Air 180mm" />
+      <Label fx:id="lblModelo3" layoutX="429.0" layoutY="119.0" prefHeight="39.0" prefWidth="74.0" text="Water" />
+      <Label fx:id="lblPreco3" layoutX="429.0" layoutY="165.0" prefHeight="39.0" prefWidth="74.0" text="400" />
+      <Label fx:id="lblMarca3" layoutX="429.0" layoutY="70.0" prefHeight="39.0" prefWidth="74.0" text="Corsair" />
+      <Label fx:id="lblModelo2" layoutX="263.0" layoutY="117.0" prefHeight="39.0" prefWidth="74.0" text="Air 240mm" />
+      <Label fx:id="lblPreco2" layoutX="263.0" layoutY="163.0" prefHeight="39.0" prefWidth="74.0" text="300" />
+      <Label fx:id="lblMarca2" layoutX="263.0" layoutY="68.0" prefHeight="39.0" prefWidth="74.0" text="Corsair" />
    </children>
 </Pane>

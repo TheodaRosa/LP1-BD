@@ -48,31 +48,29 @@ public class SSDController {
     private Label lblPreco3;
 
     @FXML
-    int compra;
-    SSD ssd = new SSD();
+    static int compra;
+    public static int valor(){return compra;};
+
     @FXML
     void comprar2(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco2.getText());
-        ssd.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+        LojaNovaController.valor += Integer.parseInt(lblPreco2.getText());
+        System.out.println("Compra feita com Sucesso! "+lblModelo2.getText());
     }
 
     @FXML
     void comprar3(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco3.getText());
-        ssd.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+        LojaNovaController.valor += Integer.parseInt(lblPreco3.getText());
+        System.out.println("Compra feita com Sucesso! "+lblModelo3.getText());
     }
 
     @FXML
     void comprar1(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco1.getText());
-        ssd.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+        LojaNovaController.valor += Integer.parseInt(lblPreco1.getText());
+        System.out.println("Compra feita com Sucesso! "+lblModelo1.getText());
     }
 
     @FXML
-    void btnMonitorClose(ActionEvent event) {
+    void btnSSDClose(ActionEvent event) {
         Stage stage = (Stage) btnFechar.getScene().getWindow();
         stage.close();
     }

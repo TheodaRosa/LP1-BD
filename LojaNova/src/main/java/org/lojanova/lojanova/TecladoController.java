@@ -47,30 +47,25 @@ public class TecladoController {
     @FXML
     private Label lblPreco3;
 
-
-    Teclado teclado = new Teclado();
-    public int compra;
-
+    static int compra;
+    public static int valor(){return compra;};
 
     @FXML
     void comprar2(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco2.getText());
-        teclado.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+        LojaNovaController.valor += Integer.parseInt(lblPreco2.getText());
+        System.out.println("Compra feita com Sucesso! "+lblMarca2.getText());
     }
 
     @FXML
     void comprar3(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco3.getText());
-        teclado.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+        LojaNovaController.valor += Integer.parseInt(lblPreco3.getText());
+        System.out.println("Compra feita com Sucesso! "+lblMarca3.getText());
     }
 
     @FXML
     void comprar1(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco1.getText());
-        teclado.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+        LojaNovaController.valor += Integer.parseInt(lblPreco1.getText());
+        System.out.println("Compra feita com Sucesso! "+lblMarca1.getText());
     }
 
     @FXML

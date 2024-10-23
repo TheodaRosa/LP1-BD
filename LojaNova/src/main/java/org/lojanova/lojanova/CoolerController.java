@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 
 public class CoolerController {
 
+
     @FXML
     private Button btnComprar1;
 
@@ -47,32 +48,30 @@ public class CoolerController {
     @FXML
     private Label lblPreco3;
 
-    int compra;
-    Cooler cooler = new Cooler();
+
+
     @FXML
-    void comprar2(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco2.getText());
-        cooler.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+    void btnComprarCooler2(ActionEvent event) {
+        LojaNovaController.valor += Integer.parseInt(lblPreco2.getText());
+        System.out.println("Compra feita com Sucesso! "+lblMarca2.getText());
     }
 
     @FXML
-    void comprar3(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco3.getText());
-        cooler.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+    void btnComprarCooler3(ActionEvent event) {
+        LojaNovaController.valor += Integer.parseInt(lblPreco3.getText());
+        System.out.println("Compra feita com Sucesso! "+lblMarca3.getText());
     }
 
     @FXML
-    void comprar1(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco1.getText());
-        cooler.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+    void btnComprarCooler1(ActionEvent event) {
+        LojaNovaController.valor += Integer.parseInt(lblPreco1.getText());
+        System.out.println("Compra feita com Sucesso! "+lblMarca1.getText());
     }
 
     @FXML
-    void btnMonitorClose(ActionEvent event) {
-
+    void btnCoolerClose(ActionEvent event) {
+        Stage stage = (Stage) btnFechar.getScene().getWindow();
+        stage.close();
     }
 
 }

@@ -81,8 +81,6 @@
       <Button fx:id="btnHD" layoutX="257.0" layoutY="123.0" mnemonicParsing="false" onAction="#btnHDOpen" prefHeight="36.0" prefWidth="89.0" text="HDs" />
       <Button fx:id="btnSSD" layoutX="256.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnSSDOpen" prefHeight="36.0" prefWidth="89.0" text="SSDs" />
       <Button fx:id="btnPlacaVideo" layoutX="256.0" layoutY="44.0" mnemonicParsing="false" onAction="#btnPlacaVideoOpen" prefHeight="45.0" prefWidth="89.0" text="Placas de &#10;Video" />
-      <Label layoutX="37.0" layoutY="377.0" text="Total de Compras: " />
-      <Label fx:id="lblTotal" layoutX="138.0" layoutY="377.0" prefHeight="17.0" prefWidth="89.0" text="0" />
       <Button fx:id="btnProcessador" layoutX="249.0" layoutY="278.0" mnemonicParsing="false" onAction="#btnProcessadorOpen" prefHeight="36.0" prefWidth="100.0" text="Processadores" />
       <Button fx:id="btnTeclado" layoutX="418.0" layoutY="278.0" mnemonicParsing="false" onAction="#btnTecladoOpen" prefHeight="36.0" prefWidth="89.0" text="Teclados" />
       <Button fx:id="btnMouse" layoutX="91.0" layoutY="278.0" mnemonicParsing="false" onAction="#btnMouseOpen" prefHeight="36.0" prefWidth="89.0" text="Mouses" />

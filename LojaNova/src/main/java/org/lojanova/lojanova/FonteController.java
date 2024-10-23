@@ -47,32 +47,31 @@ public class FonteController {
     @FXML
     private Label lblPreco3;
 
-    int compra;
-    Fonte fonte = new Fonte();
+    static int compra;
+    public static int valor(){return compra;};
+
     @FXML
-    void comprar2(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco2.getText());
-        fonte.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+    void btnComprarFonte2(ActionEvent event) {
+        LojaNovaController.valor += Integer.parseInt(lblPreco2.getText());
+        System.out.println("Compra feita com Sucesso! "+ lblMarca2.getText());
     }
 
     @FXML
-    void comprar3(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco3.getText());
-        fonte.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+    void btnComprarFonte3(ActionEvent event) {
+        LojaNovaController.valor += Integer.parseInt(lblPreco3.getText());
+        System.out.println("Compra feita com Sucesso! "+ lblMarca3.getText());
     }
 
     @FXML
-    void comprar1(ActionEvent event) {
-        this.compra += Integer.parseInt(lblPreco1.getText());
-        fonte.setCompra(this.compra);
-        System.out.println("Compra feita com Sucesso!");
+    void btnComprarFonte1(ActionEvent event) {
+        LojaNovaController.valor += Integer.parseInt(lblPreco1.getText());
+        System.out.println("Compra feita com Sucesso! "+ lblMarca1.getText());
     }
 
     @FXML
     void btnMonitorClose(ActionEvent event) {
-
+        Stage stage = (Stage) btnFechar.getScene().getWindow();
+        stage.close();
     }
 
 }
