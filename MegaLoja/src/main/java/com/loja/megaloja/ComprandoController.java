@@ -48,7 +48,7 @@ public class ComprandoController {
         lblMarca2.setText("Marca");
         lblMarca3.setText("Marca");
 
-        lblPreco1.setText("Preco");
+        lblPreco1.setText(Integer.toString(1));
         lblPreco2.setText("Preco");
         lblPreco3.setText("Preco");
 
@@ -59,17 +59,17 @@ public class ComprandoController {
 
     @FXML
     void comprarModelo1(ActionEvent event) {
-        MegaLojaController.valor = Integer.parseInt(lblPreco1.getText());
+        com.loja.megaloja.MegaLojaController.valor += Integer.parseInt(lblPreco1.getText());
     }
 
     @FXML
     void comprarModelo2(ActionEvent event) {
-
+        com.loja.megaloja.MegaLojaController.valor += Integer.parseInt(lblPreco2.getText());
     }
 
     @FXML
     void comprarModelo3(ActionEvent event) {
-
+        com.loja.megaloja.MegaLojaController.valor += Integer.parseInt(lblPreco3.getText());
     }
 
     @FXML

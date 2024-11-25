@@ -4,9 +4,9 @@ public class Object {
     String tipo;
     String marca;
     String modelo;
-    boolean preco;
+    float preco;
 
-    public Object( boolean preco, String modelo, String marca, String tipo) {
+    public Object( float preco, String modelo, String marca, String tipo) {
         this.preco = preco;
         this.modelo = modelo;
         this.marca = marca;
@@ -37,11 +37,11 @@ public class Object {
         this.modelo = modelo;
     }
 
-    public boolean isPreco() {
+    public float isPreco() {
         return preco;
     }
 
-    public void setPreco(boolean preco) {
+    public void setPreco(float preco) {
         this.preco = preco;
     }
 
