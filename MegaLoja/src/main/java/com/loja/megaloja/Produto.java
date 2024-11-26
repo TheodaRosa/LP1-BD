@@ -1,12 +1,12 @@
 package com.loja.megaloja;
 
-public class Object {
+public class Produto {
     String tipo;
     String marca;
     String modelo;
     float preco;
 
-    public Object( float preco, String modelo, String marca, String tipo) {
+    public Produto( float preco, String modelo, String marca, String tipo) {
         this.preco = preco;
         this.modelo = modelo;
         this.marca = marca;

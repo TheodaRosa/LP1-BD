@@ -3,6 +3,7 @@ package com.loja.megaloja;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -13,14 +14,40 @@ import java.io.IOException;
 public class MegaLojaController {
 
 
-    private void start() throws IOException {
-        Stage stage = new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(MegaLoja.class.getResource("compra-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();
+    private void abrirJanela(String titulo) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("compra-view.fxml"));
+            Parent root = loader.load();
+            ComprandoController controller = loader.getController();
+
+            Produto produto = new Produto(100, "Oi", "AOC", "Gabinete");
+            controller.configurarProduto(produto);
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle(titulo);
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
     }
+
+    int preco;
+    int preco2;
+    int preco3;
+    String modelo;
+    String marca;
+    String tipo;
+    String modelo2;
+    String marca2;
+    String tipo2;
+    String modelo3;
+    String marca3;
+    String tipo3;
+
+    Produto produto1 = new Produto(preco, modelo, marca, tipo);
+    Produto produto2 = new Produto(preco2, modelo2, marca2, tipo2);
+    Produto produto3 = new Produto(preco3, modelo3, marca3, tipo3);
 
     public static int valor;
 
@@ -68,70 +95,68 @@ public class MegaLojaController {
 
     @FXML
     void gabinetesOpen(ActionEvent event) throws IOException {
-        start();
-        Object object1 = new Object(100,"um", "AOC", "top");
-        Object object2 = new Object(100,"um", "AOC", "top");
-        Object object3 = new Object(100,"um", "AOC", "top");
+        abrirJanela("Gabinetes");
+        preco = 100; marca = "AOC"; modelo = "Oi"; tipo = "gabinete";
     }
 
     @FXML
     void PlacaMaeOpen(ActionEvent event) throws IOException {
-
+        abrirJanela("PlacaMae");
     }
 
     @FXML
     void cpuOpen(ActionEvent event) throws IOException {
-        start();
+        abrirJanela("CPU");
     }
 
     @FXML
     void fonteOpen(ActionEvent event) throws IOException {
-        start();
+        abrirJanela("Fonte");
     }
 
     @FXML
     void monitorOpen(ActionEvent event) throws IOException {
-        start();
+        abrirJanela("Monitor");
     }
 
     @FXML
     void coolerOpen(ActionEvent event) throws IOException {
-        start();
+        abrirJanela("Cooler");
     }
 
     @FXML
     void mouseOpen(ActionEvent event) throws IOException {
-        start();
+        abrirJanela("Mouse");
     }
 
     @FXML
     void ramOpen(ActionEvent event) throws IOException {
-        start();
+        abrirJanela("RAM");
     }
 
     @FXML
     void ssdOpen(ActionEvent event) throws IOException {
-        start();
+        abrirJanela("SSD");
     }
 
     @FXML
     void tecladoOpen(ActionEvent event) throws IOException {
-        start();
+        abrirJanela("Teclado");
     }
 
     @FXML
     void gpuOpen(ActionEvent event) throws IOException {
-        start();
+        abrirJanela("Gpu");
     }
 
     @FXML
     void hdOpen(ActionEvent event) throws IOException {
-        start();
+        abrirJanela("HD");
     }
 
     @FXML
     void carrinhoOpen(ActionEvent event) throws IOException {
-        start();
+        abrirJanela("Carrinho");
     }
 
     @FXML

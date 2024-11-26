@@ -77,4 +77,6 @@ public class ComprandoController {
 
     }
 
+    public void configurarProduto(Produto produto) {
+    }
 }

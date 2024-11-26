@@ -60,8 +60,6 @@ public class LojaNovaController {
 
     @FXML
     public void btnFinalizarCompras(javafx.event.ActionEvent event) {
-
-
         System.out.println("Obrigado por comprar na minha loja! O total foi de R$"+valor);
         Stage stage = (Stage) btnFinalizar.getScene().getWindow();
         stage.close();

@@ -9,12 +9,16 @@ import java.io.IOException;
 
 public class MegaLoja extends Application {
     @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MegaLoja.class.getResource("compra-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();
+    public void start(Stage stage) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(MegaLoja.class.getResource("janela-loja-view.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 810, 646);
+            stage.setTitle("MegaLoja");
+            stage.setScene(scene);
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
     }
 
     public static void main(String[] args) {
