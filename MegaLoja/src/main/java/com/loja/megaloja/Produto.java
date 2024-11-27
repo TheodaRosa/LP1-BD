@@ -37,7 +37,7 @@ public class Produto {
         this.modelo = modelo;
     }
 
-    public float isPreco() {
+    public float getPreco() {
         return preco;
     }
 

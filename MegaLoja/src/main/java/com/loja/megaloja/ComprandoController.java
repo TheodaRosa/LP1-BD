@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
 public class ComprandoController {
 
@@ -35,6 +36,9 @@ public class ComprandoController {
     private Button btnComprar2;
 
     @FXML
+    private Button btnSair;
+
+    @FXML
     private Label lblMarca2;
 
     @FXML
@@ -43,40 +47,53 @@ public class ComprandoController {
     @FXML
     private Label lblMarca1;
 
-    public void initialize() {
-        lblMarca1.setText("Marca");
-        lblMarca2.setText("Marca");
-        lblMarca3.setText("Marca");
-
-        lblPreco1.setText(Integer.toString(1));
-        lblPreco2.setText("Preco");
-        lblPreco3.setText("Preco");
-
-        lblModelo1.setText("Modelo");
-        lblModelo2.setText("Modelo");
-        lblModelo3.setText("Modelo");
-    }
-
     @FXML
     void comprarModelo1(ActionEvent event) {
-        com.loja.megaloja.MegaLojaController.valor += Integer.parseInt(lblPreco1.getText());
+        try {
+            System.out.println(lblModelo1.getText() + " foi adicionado no Carrinho");
+            MegaLojaController.valor += Float.parseFloat(lblPreco1.getText());
+        }catch (NumberFormatException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @FXML
     void comprarModelo2(ActionEvent event) {
-        com.loja.megaloja.MegaLojaController.valor += Integer.parseInt(lblPreco2.getText());
+        try{
+            System.out.println(lblModelo2.getText() + " foi adicionado no Carrinho");
+            MegaLojaController.valor += Float.parseFloat(lblPreco2.getText());
+        } catch (NumberFormatException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @FXML
     void comprarModelo3(ActionEvent event) {
-        com.loja.megaloja.MegaLojaController.valor += Integer.parseInt(lblPreco3.getText());
+        try {
+            System.out.println(lblModelo3.getText() + " foi adicionado no Carrinho");
+            MegaLojaController.valor += Float.parseFloat(lblPreco3.getText());
+        }catch (NumberFormatException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @FXML
     void sairJanela(ActionEvent event) {
-
+        Stage stage = (Stage) btnSair.getScene().getWindow();
+        stage.close();
     }
 
-    public void configurarProduto(Produto produto) {
+    public void configurarProdutos(Produto produto1, Produto produto2, Produto produto3) {
+        lblModelo1.setText(produto1.getModelo());
+        lblModelo2.setText(produto2.getModelo());
+        lblModelo3.setText(produto3.getModelo());
+
+        lblPreco1.setText(String.format("%.2f", produto1.getPreco()));
+        lblPreco2.setText(String.format("%.2f", produto2.getPreco()));
+        lblPreco3.setText(String.format("%.2f", produto3.getPreco()));
+
+        lblMarca1.setText(produto1.getMarca());
+        lblMarca2.setText(produto2.getMarca());
+        lblMarca3.setText(produto3.getMarca());
     }
 }

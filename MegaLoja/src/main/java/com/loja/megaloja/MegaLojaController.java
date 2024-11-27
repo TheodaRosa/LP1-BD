@@ -14,14 +14,12 @@ import java.io.IOException;
 public class MegaLojaController {
 
 
-    private void abrirJanela(String titulo) {
+    private void abrirJanela(String titulo, Produto produto1, Produto produto2, Produto produto3) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("compra-view.fxml"));
             Parent root = loader.load();
             ComprandoController controller = loader.getController();
-
-            Produto produto = new Produto(100, "Oi", "AOC", "Gabinete");
-            controller.configurarProduto(produto);
+            controller.configurarProdutos(produto1, produto2, produto3);
 
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
@@ -32,24 +30,7 @@ public class MegaLojaController {
         }
     }
 
-    int preco;
-    int preco2;
-    int preco3;
-    String modelo;
-    String marca;
-    String tipo;
-    String modelo2;
-    String marca2;
-    String tipo2;
-    String modelo3;
-    String marca3;
-    String tipo3;
-
-    Produto produto1 = new Produto(preco, modelo, marca, tipo);
-    Produto produto2 = new Produto(preco2, modelo2, marca2, tipo2);
-    Produto produto3 = new Produto(preco3, modelo3, marca3, tipo3);
-
-    public static int valor;
+    public static float valor;
 
     @FXML
     private Button btnGPU;
@@ -95,68 +76,102 @@ public class MegaLojaController {
 
     @FXML
     void gabinetesOpen(ActionEvent event) throws IOException {
-        abrirJanela("Gabinetes");
-        preco = 100; marca = "AOC"; modelo = "Oi"; tipo = "gabinete";
+        Produto produto1 = new Produto(100, "modelo", "marca", "Gabinete");
+        Produto produto2 = new Produto(200, "modelo2", "marca2", "Gabinete");
+        Produto produto3 = new Produto(300, "modelo3", "marca3", "Gabinete");
+        abrirJanela("Gabinetes", produto1, produto2, produto3);
     }
 
     @FXML
     void PlacaMaeOpen(ActionEvent event) throws IOException {
-        abrirJanela("PlacaMae");
+        Produto produto1 = new Produto(100, "modelo", "marca", "Gabinete");
+        Produto produto2 = new Produto(200, "modelo2", "marca2", "Gabinete");
+        Produto produto3 = new Produto(300, "modelo3", "marca3", "Gabinete");
+        abrirJanela("PlacaMae", produto1, produto2, produto3);
     }
 
     @FXML
     void cpuOpen(ActionEvent event) throws IOException {
-        abrirJanela("CPU");
+        Produto produto1 = new Produto(100, "modelo", "marca", "Gabinete");
+        Produto produto2 = new Produto(200, "modelo2", "marca2", "Gabinete");
+        Produto produto3 = new Produto(300, "modelo3", "marca3", "Gabinete");
+        abrirJanela("CPU", produto1, produto2, produto3);
     }
 
     @FXML
     void fonteOpen(ActionEvent event) throws IOException {
-        abrirJanela("Fonte");
+        Produto produto1 = new Produto(100, "modelo", "marca", "Gabinete");
+        Produto produto2 = new Produto(200, "modelo2", "marca2", "Gabinete");
+        Produto produto3 = new Produto(300, "modelo3", "marca3", "Gabinete");
+        abrirJanela("Fonte", produto1, produto2, produto3);
     }
 
     @FXML
     void monitorOpen(ActionEvent event) throws IOException {
-        abrirJanela("Monitor");
+        Produto produto1 = new Produto(100, "modelo", "marca", "Gabinete");
+        Produto produto2 = new Produto(200, "modelo2", "marca2", "Gabinete");
+        Produto produto3 = new Produto(300, "modelo3", "marca3", "Gabinete");
+        abrirJanela("Monitor", produto1, produto2, produto3);
     }
 
     @FXML
     void coolerOpen(ActionEvent event) throws IOException {
-        abrirJanela("Cooler");
+        Produto produto1 = new Produto(100, "modelo", "marca", "Gabinete");
+        Produto produto2 = new Produto(200, "modelo2", "marca2", "Gabinete");
+        Produto produto3 = new Produto(300, "modelo3", "marca3", "Gabinete");
+        abrirJanela("Cooler", produto1, produto2, produto3);
     }
 
     @FXML
     void mouseOpen(ActionEvent event) throws IOException {
-        abrirJanela("Mouse");
+        Produto produto1 = new Produto(100, "modelo", "marca", "Gabinete");
+        Produto produto2 = new Produto(200, "modelo2", "marca2", "Gabinete");
+        Produto produto3 = new Produto(300, "modelo3", "marca3", "Gabinete");
+        abrirJanela("Mouse", produto1, produto2, produto3);
     }
 
     @FXML
     void ramOpen(ActionEvent event) throws IOException {
-        abrirJanela("RAM");
+        Produto produto1 = new Produto(100, "modelo", "marca", "Gabinete");
+        Produto produto2 = new Produto(200, "modelo2", "marca2", "Gabinete");
+        Produto produto3 = new Produto(300, "modelo3", "marca3", "Gabinete");
+        abrirJanela("RAM", produto1, produto2, produto3);
     }
 
     @FXML
     void ssdOpen(ActionEvent event) throws IOException {
-        abrirJanela("SSD");
+        Produto produto1 = new Produto(100, "modelo", "marca", "Gabinete");
+        Produto produto2 = new Produto(200, "modelo2", "marca2", "Gabinete");
+        Produto produto3 = new Produto(300, "modelo3", "marca3", "Gabinete");
+        abrirJanela("SSD", produto1, produto2, produto3);
     }
 
     @FXML
     void tecladoOpen(ActionEvent event) throws IOException {
-        abrirJanela("Teclado");
+        Produto produto1 = new Produto(100, "modelo", "marca", "Gabinete");
+        Produto produto2 = new Produto(200, "modelo2", "marca2", "Gabinete");
+        Produto produto3 = new Produto(300, "modelo3", "marca3", "Gabinete");
+        abrirJanela("Teclado", produto1, produto2, produto3);
     }
 
     @FXML
     void gpuOpen(ActionEvent event) throws IOException {
-        abrirJanela("Gpu");
+        Produto produto1 = new Produto(100, "modelo", "marca", "Gabinete");
+        Produto produto2 = new Produto(200, "modelo2", "marca2", "Gabinete");
+        Produto produto3 = new Produto(300, "modelo3", "marca3", "Gabinete");
+        abrirJanela("Gpu", produto1, produto2, produto3);
     }
 
     @FXML
     void hdOpen(ActionEvent event) throws IOException {
-        abrirJanela("HD");
+        Produto produto1 = new Produto(100, "modelo", "marca", "Gabinete");
+        Produto produto2 = new Produto(200, "modelo2", "marca2", "Gabinete");
+        Produto produto3 = new Produto(300, "modelo3", "marca3", "Gabinete");
+        abrirJanela("HD", produto1, produto2, produto3);
     }
 
     @FXML
     void carrinhoOpen(ActionEvent event) throws IOException {
-        abrirJanela("Carrinho");
     }
 
     @FXML
