@@ -52,8 +52,7 @@ public class ComprandoController {
         try {
             System.out.println(lblModelo1.getText() + " foi adicionado no Carrinho");
             MegaLojaController.valor += Float.parseFloat(lblPreco1.getText());
-        }catch (NumberFormatException e) {
-            throw new RuntimeException(e);
+        }catch (RuntimeException _) {
         }
     }
 
@@ -62,8 +61,7 @@ public class ComprandoController {
         try{
             System.out.println(lblModelo2.getText() + " foi adicionado no Carrinho");
             MegaLojaController.valor += Float.parseFloat(lblPreco2.getText());
-        } catch (NumberFormatException e) {
-            throw new RuntimeException(e);
+        } catch (RuntimeException _) {
         }
     }
 
@@ -72,8 +70,7 @@ public class ComprandoController {
         try {
             System.out.println(lblModelo3.getText() + " foi adicionado no Carrinho");
             MegaLojaController.valor += Float.parseFloat(lblPreco3.getText());
-        }catch (NumberFormatException e) {
-            throw new RuntimeException(e);
+        }catch (RuntimeException _) {
         }
     }
 
