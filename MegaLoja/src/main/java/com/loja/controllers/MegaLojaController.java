@@ -175,6 +175,20 @@ public class MegaLojaController {
 
     @FXML
     void carrinhoOpen(ActionEvent event) throws IOException {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/loja/megaloja/carrinho-view.fxml"));
+            Parent root = loader.load();
+
+            CarrinhoController controller = loader.getController();
+            controller.configurarTabelas();
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Carrinho");
+            stage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
     }
 
     @FXML

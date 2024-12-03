@@ -75,14 +75,10 @@ public class ComprandoController {
     }
 
     private void comprarProduto(Produto produto) {
-        try (Connection connection = ConexaoFactory.getConnection()) {
-            ProdutoDAO produtoDAO = new ProdutoDAO(connection);
-            produtoDAO.inserir(produto);
+        try {
             System.out.println(lblModelo3.getText() + " foi adicionado no Carrinho");
             MegaLojaController.valor += Float.parseFloat(lblPreco3.getText());
-        }catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        }catch (NumberFormatException _) {}
     }
 
     @FXML
