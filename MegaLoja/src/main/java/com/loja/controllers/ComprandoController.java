@@ -1,10 +1,12 @@
 package com.loja.controllers;
 
 import com.loja.connection.ConexaoFactory;
+import com.loja.context.CarrinhoContext;
 import com.loja.dao.ProdutoDAO;
 import com.loja.objects.Produto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
@@ -76,8 +78,16 @@ public class ComprandoController {
 
     private void comprarProduto(Produto produto) {
         try {
-            System.out.println(lblModelo3.getText() + " foi adicionado no Carrinho");
-            MegaLojaController.valor += Float.parseFloat(lblPreco3.getText());
+            if(produto == null) {
+                System.out.println("Produto inválido");
+                return;
+            }
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            CarrinhoContext.getInstance().adicionarProduto(produto);
+            alert.setTitle("Produto Adicionado");
+            alert.setHeaderText(null);
+            alert.setContentText(produto.getModelo() + " foi adicionado ao carrinho.");
+            alert.showAndWait();
         }catch (NumberFormatException _) {}
     }
 
