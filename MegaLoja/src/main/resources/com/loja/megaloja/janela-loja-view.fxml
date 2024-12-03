@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="646.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.loja.megaloja.MegaLojaController">
+<AnchorPane prefHeight="646.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.loja.controllers.MegaLojaController">
    <children>
       <GridPane alignment="CENTER" layoutX="106.0" layoutY="36.0" prefHeight="454.0" prefWidth="599.0">
         <columnConstraints>

@@ -1,12 +1,12 @@
-package com.loja.megaloja;
+package com.loja.objects;
 
 public class Produto {
     String tipo;
     String marca;
     String modelo;
-    float preco;
+    double preco;
 
-    public Produto( float preco, String modelo, String marca, String tipo) {
+    public Produto( double preco, String modelo, String marca, String tipo) {
         this.preco = preco;
         this.modelo = modelo;
         this.marca = marca;
@@ -37,7 +37,7 @@ public class Produto {
         this.modelo = modelo;
     }
 
-    public float getPreco() {
+    public double getPreco() {
         return preco;
     }
 

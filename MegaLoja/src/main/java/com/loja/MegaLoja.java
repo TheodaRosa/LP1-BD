@@ -1,4 +1,4 @@
-package com.loja.megaloja;
+package com.loja;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +11,7 @@ public class MegaLoja extends Application {
     @Override
     public void start(Stage stage) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(MegaLoja.class.getResource("janela-loja-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(MegaLoja.class.getResource("/com/loja/megaloja/janela-loja-view.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 810, 646);
             stage.setTitle("MegaLoja");
             stage.setScene(scene);

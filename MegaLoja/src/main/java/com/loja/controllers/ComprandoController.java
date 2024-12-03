@@ -1,12 +1,22 @@
-package com.loja.megaloja;
+package com.loja.controllers;
 
+import com.loja.connection.ConexaoFactory;
+import com.loja.dao.ProdutoDAO;
+import com.loja.objects.Produto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+
 public class ComprandoController {
+
+    private Produto produto1;
+    private Produto produto2;
+    private Produto produto3;
 
     @FXML
     private Label lblModelo3;
@@ -47,30 +57,31 @@ public class ComprandoController {
     @FXML
     private Label lblMarca1;
 
+
+
     @FXML
     void comprarModelo1(ActionEvent event) {
-        try {
-            System.out.println(lblModelo1.getText() + " foi adicionado no Carrinho");
-            MegaLojaController.valor += Float.parseFloat(lblPreco1.getText());
-        }catch (RuntimeException _) {
-        }
+        comprarProduto(produto1);
     }
 
     @FXML
     void comprarModelo2(ActionEvent event) {
-        try{
-            System.out.println(lblModelo2.getText() + " foi adicionado no Carrinho");
-            MegaLojaController.valor += Float.parseFloat(lblPreco2.getText());
-        } catch (RuntimeException _) {
-        }
+        comprarProduto(produto2);
     }
 
     @FXML
     void comprarModelo3(ActionEvent event) {
-        try {
+        comprarProduto(produto3);
+    }
+
+    private void comprarProduto(Produto produto) {
+        try (Connection connection = ConexaoFactory.getConnection()) {
+            ProdutoDAO produtoDAO = new ProdutoDAO(connection);
+            produtoDAO.inserir(produto);
             System.out.println(lblModelo3.getText() + " foi adicionado no Carrinho");
             MegaLojaController.valor += Float.parseFloat(lblPreco3.getText());
-        }catch (RuntimeException _) {
+        }catch (SQLException e) {
+            throw new RuntimeException(e);
         }
     }
 
@@ -81,6 +92,10 @@ public class ComprandoController {
     }
 
     public void configurarProdutos(Produto produto1, Produto produto2, Produto produto3) {
+        this.produto1 = produto1;
+        this.produto2 = produto2;
+        this.produto3 = produto3;
+
         lblModelo1.setText(produto1.getModelo());
         lblModelo2.setText(produto2.getModelo());
         lblModelo3.setText(produto3.getModelo());

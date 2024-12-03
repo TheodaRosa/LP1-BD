@@ -1,5 +1,6 @@
-package com.loja.megaloja;
+package com.loja.controllers;
 
+import com.loja.objects.Produto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,7 +17,7 @@ public class MegaLojaController {
 
     private void abrirJanela(String titulo, Produto produto1, Produto produto2, Produto produto3) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("compra-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/loja/megaloja/compra-view.fxml"));
             Parent root = loader.load();
             ComprandoController controller = loader.getController();
             controller.configurarProdutos(produto1, produto2, produto3);
@@ -73,6 +74,8 @@ public class MegaLojaController {
 
     @FXML
     private Button btnCooler;
+
+
 
     @FXML
     void gabinetesOpen(ActionEvent event) throws IOException {

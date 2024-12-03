@@ -58,7 +58,7 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>com.loja.megaloja/com.loja.megaloja.MegaLoja</mainClass>
+              <mainClass>com.loja.megaloja/com.loja.MegaLoja</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>
