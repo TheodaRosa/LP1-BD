@@ -1,8 +1,6 @@
 package com.loja.controllers;
 
-import com.loja.connection.ConexaoFactory;
 import com.loja.context.CarrinhoContext;
-import com.loja.dao.ProdutoDAO;
 import com.loja.objects.Produto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -10,9 +8,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-
-import java.sql.Connection;
-import java.sql.SQLException;
 
 public class ComprandoController {
 
@@ -106,9 +101,9 @@ public class ComprandoController {
         lblModelo2.setText(produto2.getModelo());
         lblModelo3.setText(produto3.getModelo());
 
-        lblPreco1.setText(String.format("%.2f", produto1.getPreco()));
-        lblPreco2.setText(String.format("%.2f", produto2.getPreco()));
-        lblPreco3.setText(String.format("%.2f", produto3.getPreco()));
+        lblPreco1.setText(String.format("%.2f", produto1.getValor()));
+        lblPreco2.setText(String.format("%.2f", produto2.getValor()));
+        lblPreco3.setText(String.format("%.2f", produto3.getValor()));
 
         lblMarca1.setText(produto1.getMarca());
         lblMarca2.setText(produto2.getMarca());

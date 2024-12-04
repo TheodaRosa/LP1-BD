@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -9,7 +10,7 @@
 
 <AnchorPane prefHeight="646.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.loja.controllers.MegaLojaController">
    <children>
-      <GridPane alignment="CENTER" layoutX="106.0" layoutY="36.0" prefHeight="454.0" prefWidth="599.0">
+      <GridPane alignment="CENTER" layoutX="70.0" layoutY="14.0" prefHeight="511.0" prefWidth="670.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -22,7 +23,72 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="btnGabinetes" mnemonicParsing="false" onAction="#gabinetesOpen" prefHeight="56.0" prefWidth="99.0" text="Gabinetes" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/baixar_11.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@Images/baixar_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@Images/baixar_4.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@Images/baixar_8.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="261.0" layoutX="10.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@Images/baixar_6.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="210.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@Images/baixar_9.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="210.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@Images/baixar_2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="210.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@Images/baixar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="210.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@Images/baixar_7.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="410.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@Images/baixar_5.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="410.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@Images/baixar_3.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="410.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@Images/baixar_10.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnRAM" mnemonicParsing="false" onAction="#ramOpen" prefHeight="56.0" prefWidth="99.0" text="RAMs" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMouse" mnemonicParsing="false" onAction="#mouseOpen" prefHeight="56.0" prefWidth="99.0" text="Mouses" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                <font>
                   <Font size="15.0" />
                </font>
@@ -32,7 +98,17 @@
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button fx:id="btnCPU" mnemonicParsing="false" onAction="#cpuOpen" prefHeight="56.0" prefWidth="99.0" text="CPUs" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+            <Button fx:id="btnGabinetes" mnemonicParsing="false" onAction="#gabinetesOpen" prefHeight="56.0" prefWidth="99.0" text="Gabinetes" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSSD" mnemonicParsing="false" onAction="#ssdOpen" prefHeight="56.0" prefWidth="99.0" text="SSDs" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTeclado" mnemonicParsing="false" onAction="#tecladoOpen" prefHeight="56.0" prefWidth="99.0" text="Teclados" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                <font>
                   <Font size="15.0" />
                </font>
@@ -52,44 +128,29 @@
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button fx:id="btnHD" mnemonicParsing="false" onAction="#hdOpen" prefHeight="56.0" prefWidth="99.0" text="HDs" GridPane.halignment="CENTER" GridPane.rowIndex="2">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Button>
-            <Button fx:id="btnSSD" mnemonicParsing="false" onAction="#ssdOpen" prefHeight="56.0" prefWidth="99.0" text="SSDs" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Button>
-            <Button fx:id="btnRAM" mnemonicParsing="false" onAction="#ramOpen" prefHeight="56.0" prefWidth="99.0" text="RAMs" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Button>
             <Button fx:id="btnMonitor" mnemonicParsing="false" onAction="#monitorOpen" prefHeight="56.0" prefWidth="99.0" text="Monitores" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button fx:id="btnMouse" mnemonicParsing="false" onAction="#mouseOpen" prefHeight="56.0" prefWidth="99.0" text="Mouses" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <Button fx:id="btnCPU" mnemonicParsing="false" onAction="#cpuOpen" prefHeight="56.0" prefWidth="99.0" text="CPUs" GridPane.columnIndex="2" GridPane.halignment="CENTER">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button fx:id="btnTeclado" mnemonicParsing="false" onAction="#tecladoOpen" prefHeight="56.0" prefWidth="99.0" text="Teclados" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            <Button fx:id="btnHD" mnemonicParsing="false" onAction="#hdOpen" prefHeight="56.0" prefWidth="99.0" text="HDs" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
          </children>
       </GridPane>
-      <Button fx:id="btnCarrinho" layoutX="257.0" layoutY="517.0" mnemonicParsing="false" onAction="#carrinhoOpen" prefHeight="76.0" prefWidth="99.0" text="Carrinho">
+      <Button fx:id="btnCarrinho" layoutX="257.0" layoutY="541.0" mnemonicParsing="false" onAction="#carrinhoOpen" prefHeight="76.0" prefWidth="99.0" text="Carrinho">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="btnCancelar" layoutX="454.0" layoutY="517.0" mnemonicParsing="false" onAction="#cancelarCompras" prefHeight="76.0" prefWidth="99.0" text="Cancelar">
+      <Button fx:id="btnCancelar" layoutX="454.0" layoutY="541.0" mnemonicParsing="false" onAction="#cancelarCompras" prefHeight="76.0" prefWidth="99.0" text="Cancelar">
          <font>
             <Font size="18.0" />
          </font>

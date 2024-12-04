@@ -37,7 +37,7 @@ public class Produto {
         this.modelo = modelo;
     }
 
-    public double getPreco() {
+    public double getValor() {
         return preco;
     }
 

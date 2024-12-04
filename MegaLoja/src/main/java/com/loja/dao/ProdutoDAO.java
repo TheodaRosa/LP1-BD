@@ -4,7 +4,6 @@ import com.loja.connection.ConexaoFactory;
 import com.loja.objects.Produto;
 
 import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 
 public class ProdutoDAO {
@@ -18,7 +17,7 @@ public class ProdutoDAO {
             for (Produto produto : produtos) {
                 stmt.setString(1, produto.getModelo());
                 stmt.setString(2, produto.getMarca());
-                stmt.setDouble(3, produto.getPreco());
+                stmt.setDouble(3, produto.getValor());
                 stmt.setString(4, produto.getTipo());
                 stmt.addBatch(); // Adiciona ao lote
             }
